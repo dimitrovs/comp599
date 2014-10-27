@@ -279,14 +279,28 @@ Predicting positive edges in signed social networks is useful for recommending c
 ### Passivity ###
 ***
 
-How difficult is it to influence a given user?
-
 > An average Twitter user retweets only one in 318
 > URLs, which is a relatively low value.
+
+How difficult is it to influence a given user?
 
 - Majority of users are **consumers** (i.e. *passive nodes*)
 - Barrier to propagation
 - Higlhy passive users may be **spammers**
+
+<br><small>W Galuba, S Asur, BA Huberman. Influence and passivity in social media, in Machine learning and knowledge discovery in databases, 2011, Springer Berlin Heidelberg.</small>
+
+---
+
+
+### Influence-Passivity Algorithm ###
+***
+Directed graph G = (N,E,W) with nodes N, arcs E, and arc weights W
+- **w** ij : *influence i exerts on j / total influence i attempted to exert on j*
+- acceptance rate **u** ij : *influence j accepted from i /  total influence accepted by j*
+- rejection rate **v** ji: *influence user i rejected from j / total influence rejected from j*
+
+![Influence Passivity](assets/influence_passivity.png)
 
 <br><small>W Galuba, S Asur, BA Huberman. Influence and passivity in social media, in Machine learning and knowledge discovery in databases, 2011, Springer Berlin Heidelberg.</small>
 
