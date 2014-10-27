@@ -13,6 +13,74 @@ Links in social networks can be signed: positive or negative
 
 ---
 
+### Influence 2 ###
+***
+
+A relation in a social network is positive or negative depending on the attitude of the originator towards the target of the relation.
+
+
+<br><small>J Leskovec, D Huttenlocher, J Kleinberg. Predicting positive and negative links in online social networks, in WWW, 2010</small>
+
+---
+
+### Edge Sign Prediction ###
+***
+Given a social network, with an edge from node *u* to node *v*, can we infer the sign *s(u,v)* from the rest of the network?
+
+- Estimate unknown sentiment based on other sentiments in the network
+ 1. Similar to link prediction
+
+<br><small>J Leskovec, D Huttenlocher, J Kleinberg. Predicting positive and negative links in online social networks, in WWW, 2010</small>
+
+---
+
+### Influence 4 ###
+***
+
+Identifying the negative edges in a social network can help predict positive edges, which were not previously known.
+
+<br><small>J Leskovec, D Huttenlocher, J Kleinberg. Predicting positive and negative links in online social networks, in WWW, 2010</small>
+
+---
+
+### Balance Theory ###
+***
+
+> my friend’s friend is my friend
+> my friend’s enemy is my enemy
+> my enemy’s friend is my enemy
+> my enemy’s enemy is my friend
+Heider’s Balance Theory (1958)
+
+### P-O-X model ###
+***
+
+![Heider's P-O-X model](assets/pox.jpg)
+Fritz Heider's P-O-X model, also known as a triad.
+
+> Sentiment relation p and x is determined by an attitude of p and x toward o. If the
+> multiplication of signs of these relations is positive, then the balance state is achieved
+
+- three positive links
+- two negatives and one positive
+
+<br><small>D Khanafiah , H Situngkir. Social Balance Theory. Revisiting Heider’s Balance Theory for many agents, 2004 </small>
+
+---
+
+### Status Theory ###
+***
+![Status Theory](assets/evolution5.jpg)
+
+> Given a **positive**, directed, edge (x,y) from x to y, x regards y as having **higher status**,
+> conversly, a **negative** edge indicates that x regards y as having **lower status**.
+> Flipping the direction of an edge, also flips its sign.
+
+
+<br><small>J Leskovec, D Huttenlocher, J Kleinberg. Predicting positive and negative links in online social networks, in WWW, 2010</small>
+<br><small>http://rationallyspeaking.blogspot.ca/2012/09/jerry-coyne-vs-john-dupre-on-status-of.html</small>
+---
+
 ## Influence ##
 ***
 
@@ -23,31 +91,6 @@ Links in social networks can be signed: positive or negative
 - **Popularity** and **influence** are *not* strongly correlated
 
 <br><small>W Galuba, S Asur, BA Huberman. Influence and passivity in social media, in Machine learning and knowledge discovery in databases, 2011, Springer Berlin Heidelberg.</small>
-
----
-
-### Influence 2 ###
-***
-
----
-
-### Influence 3 ###
-***
-
----
-
-### Influence 4 ###
-***
-
----
-
-### Influence 5 ###
-***
-
----
-
-### Influence 6 ###
-***
 
 ---
 
