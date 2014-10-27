@@ -70,6 +70,21 @@ Identifies the most important (influetial) vertices.
 
 ---
 
+### Degree centrality ###
+***
+
+> number of ties a node has
+
+In directed networks there are two types:
+- **indegree** : number of ties to the node (followers, popularity)
+- **outdegree** : number of ties from the node (following)
+
+![Degree Centrality](assets/degree_centrality.jpg)
+
+<br><small>http://hr.toolbox.com/blogs/organizational-network-mapping/social-organizational-network-analysis-common-terminology-part-3-46734</small>
+
+---
+
 ### Betweenness centrality ###
 ***
 
@@ -77,7 +92,8 @@ number of shortest paths through v / total number of shortest paths
 
 ![Betweenness Centrality](assets/betweenness_centrality.png)
 
-high betweenness centrality = high influence on the transfer through the network,
+- number of times a node acts as a bridge between two nodes
+- high betweenness centrality = high influence on the transfer through the network,
 assuming transfer follows shortest path
 
 <br><small>http://en.wikipedia.org/wiki/Betweenness_centrality</small>
@@ -87,22 +103,45 @@ assuming transfer follows shortest path
 ### Closeness centrality ###
 ***
 
+The inverse of the sum of the distances from a node to all other nodes.
+
+<br><small>Alex Bavelas. Communication patterns in task-oriented groups. J. Acoust. Soc. Am, 22</small>
+
 ---
 
 ### Eigenvector centrality ###
 ***
+
+Eigenvector centrality is a generalization of PageRank.
+
+- measures the influence of a node in a social network
+- assigns relative scores to nodes, with nodes of higher scores contributing more than a large number of nodes of lower scores
+
+<br><small>http://www.ams.org/samplings/feature-column/fcarc-pagerank</small>
 
 ---
 
 ### Alpha centrality ###
 ***
 
----
+Adds *external influence* to eigenvector centrality.
 
-### Degree centrality ###
-***
+![Alpha Centrality](assets/alpha_centrality.png)
+
+- alpha: a tradeoff constant b/w connection & external influence
+ - alpha = 0 : only external influence determines alpha centrality
+ - alpha = infinity : alpha centrality = eigenvector centrality
 
 ---
 
 ### Structural holes ###
 ***
+
+![Structural Hole](assets/structural_hole.jpg)
+
+- clusters form in networks with homogeneous vertices
+- clusters are characterized by strong ties between the vertices
+- when two clusters contain non-overlapping information, there is a structural hole between them
+- nodes **"bridging"** the structural holes are called **"borkers"** and can leverage **social capital**
+
+<br><small>http://edbrenegar.typepad.com/leading_questions/say-thanks-every-day/</small>
