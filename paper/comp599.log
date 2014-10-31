@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.7.14)  31 OCT 2014 00:56
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.7.14)  31 OCT 2014 00:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -286,10 +286,10 @@ LaTeX Warning: Label `fig_sim' multiply defined.
 LaTeX Warning: Label `fig_sim' multiply defined.
 
 
-LaTeX Warning: Label `Bib:Leskovec' multiply defined.
-
-
 LaTeX Warning: Label `fig_sim' multiply defined.
+
+
+LaTeX Warning: Label `Bib:Leskovec' multiply defined.
 
 )
 \openout1 = `comp599.aux'.
