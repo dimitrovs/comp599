@@ -262,33 +262,6 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@dimlist=\toks16
 ) (./comp599.aux
 
-LaTeX Warning: Label `fig_sim' multiply defined.
-
-
-LaTeX Warning: Label `fig_sim' multiply defined.
-
-
-LaTeX Warning: Label `fig_sim' multiply defined.
-
-
-LaTeX Warning: Label `fig_sim' multiply defined.
-
-
-LaTeX Warning: Label `fig_sim' multiply defined.
-
-
-LaTeX Warning: Label `fig_sim' multiply defined.
-
-
-LaTeX Warning: Label `fig_sim' multiply defined.
-
-
-LaTeX Warning: Label `fig_sim' multiply defined.
-
-
-LaTeX Warning: Label `fig_sim' multiply defined.
-
-
 LaTeX Warning: Label `Bib:Leskovec' multiply defined.
 
 )
@@ -789,10 +762,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 452.
  ) 
 Here is how much of TeX's memory you used:
- 6236 strings out of 495059
- 96200 string characters out of 3182030
- 188747 words of memory out of 3000000
- 9337 multiletter control sequences out of 15000+200000
+ 6235 strings out of 495059
+ 96191 string characters out of 3182030
+ 189482 words of memory out of 3000000
+ 9336 multiletter control sequences out of 15000+200000
  33007 words of font info for 62 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  29i,8n,28p,325b,436s stack positions out of 5000i,500n,10000p,200000b,50000s
