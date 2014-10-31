@@ -214,7 +214,7 @@ In networks with homogeneous vertices (e.g. students who finished the same unive
 \begin{figure}[hb]
 \centering
 %\includegraphics{imagen1.eps}
-\includegraphics[width=3.2in]{pox}
+\includegraphics[width=2.0in]{pox}
 \caption{
 Fritz Heider's P-O-X model. [14]
 }
@@ -230,7 +230,7 @@ Furthermore, identifying the negative edges in a social network can help predict
 \begin{figure}[hb]
 \centering
 %\includegraphics{imagen1.eps}
-\includegraphics[width=2.0in]{predicting_positive}
+\includegraphics[width=3.2in]{predicting_positive}
 \caption{
 Accuracy of predicting positive and negative edges for three social networks. [13]
 }
@@ -286,12 +286,16 @@ Leskovec et al. define Viral Marketing of products in social networks as "a diff
 They consider the habits of shoppers on online stores, which offer a wide variety of products, and find that significant share of purchases is for rarely sold items.
 In the case of Amazon, 20\%-40\% of all unit sales are for products outside of the top 100K most popular. Thus, there is a "long tail" of sales for niche products which
 are hard to advertise by traditional methods. Social networks are effective for advertising such niche products [18].\\
-In particular, person-to-person recommendations on a social network can be modelled as a directed multi graph where the nodes represent customers and edges - recommendations (including direction, product and time).
+In particular, person-to-person recommendations on a social network can be modelled as a directed multi graph where the nodes represent customers and the edges - recommendations (including direction, product and time).
 Forward recommendations are defined as the case when customers purchase as a result of a recommendation, and also decide to recommend to others [18]. These forward
-recommendations can lead to information cascades. Each cascade is a network of individuals (nodes) and recommendations (edges), where individuals make decisions based on the decisions of others [19].\\
-Luskovec et al. find that the probability of making a recommendation declines after an initial increase, going deeper into the cascade. Furthermore, the increasing number of incoming recommendations,
-increases probability of purchase, up to a point. For books after 2 recommendations probability saturates (perceived as SPAM) while for DVDs probability staturates at 10 incoming recommendations [18]. \\
-
+recommendations can lead to information cascades. Each cascade is a network of individuals (nodes) and recommendations (edges), where individuals make decisions based on the decisions of others [19].
+Luskovec et al. find that the probability of making a recommendation declines after an initial increase, going deeper into the cascade.\\
+Furthermore, the increasing number of incoming recommendations for the same product, increases probability of purchase, up to a point. For books after 2 recommendations probability saturates (perceived as SPAM) while for DVDs probability staturates at 10 incoming recommendations [18]. \\
+Receiving too many recommendations (>3) from the same node can also be perceived as SPAM. The level of saturation also depends on the product, eg. for books decrease in influence is more gradual than for DVDs. Thus, incentivising too much recommendation as part of a viral marketing
+campaign, weakens the links in a social network [18].\\
+In the case of outgoing recommendations, the receiver of a recommendation does not know how many other recommendations were sent. Leskovec et al. find that probability of influence as a function of the number of outgoing recommendations depends on the product.
+For example for books, probability increases with up to 10 outoging recommendations, then stabalizes or decreases; while for DVDs, probability increases with the increase of recommendations, i.e. it does not plateau. Hence, widely recommended products may not be suitable for Viral Marketing, as multiple individuals
+will recommend to the same person [18].\\
 
 % An example of a floating figure using the graphicx package.
 % Note that \label must occur AFTER (or within) \caption.
