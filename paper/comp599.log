@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.7.14)  30 OCT 2014 19:58
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.7.14)  30 OCT 2014 20:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -260,7 +260,17 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@layouthoffset=\dimen129
 \Gm@layoutvoffset=\dimen130
 \Gm@dimlist=\toks16
-) (./comp599.aux)
+) (./comp599.aux
+
+LaTeX Warning: Label `table3' multiply defined.
+
+
+LaTeX Warning: Label `table3' multiply defined.
+
+
+LaTeX Warning: Label `Bib:VelocityShares' multiply defined.
+
+)
 \openout1 = `comp599.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
@@ -277,7 +287,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
 LaTeX Font Info:    ... okay on input line 55.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
 LaTeX Font Info:    ... okay on input line 55.
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count105
 \scratchdimen=\dimen131
@@ -367,49 +377,44 @@ ead.
 ead.
 ** ATTENTION: \authorblockA is deprecated (line 68). Use \IEEEauthorblockA inst
 ead.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 75.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 75.
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
-
- []
-
-** ATTENTION: \keywords is deprecated (line 78). Use \IEEEkeywords instead.
+** ATTENTION: \keywords is deprecated (line 74). Use \IEEEkeywords instead.
 Missing character: There is no Â in font ptmr7t!
 Missing character: There is no ® in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--104
+Underfull \hbox (badness 10000) in paragraph at lines 80--100
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--116
+Underfull \hbox (badness 10000) in paragraph at lines 103--112
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--128
+Underfull \hbox (badness 10000) in paragraph at lines 115--124
 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 132.
+(Font)              <7> on input line 128.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 132.
+(Font)              <5> on input line 128.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 128.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 128.
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--149
+Underfull \hbox (badness 10000) in paragraph at lines 127--145
 []\OT1/ptm/m/n/10 I used leave-one-out cross-validation to test the
  []
 
 
-Underfull \hbox (badness 6428) in paragraph at lines 131--149
+Underfull \hbox (badness 6428) in paragraph at lines 127--145
 \OT1/ptm/m/n/10 per-for-mance of my dataset with lo-gis-tic re-gres-sion,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--149
+Underfull \hbox (badness 10000) in paragraph at lines 127--145
 
  []
 
@@ -417,135 +422,132 @@ Underfull \hbox (badness 10000) in paragraph at lines 131--149
 
 
 ]
-Overfull \hbox (8.67259pt too wide) in paragraph at lines 164--180
+Overfull \hbox (8.67259pt too wide) in paragraph at lines 160--176
 []$[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--190
+Underfull \hbox (badness 10000) in paragraph at lines 178--186
 
  []
 
 
-Overfull \hbox (8.67259pt too wide) in paragraph at lines 196--212
+Overfull \hbox (8.67259pt too wide) in paragraph at lines 192--208
 []$[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--218
+Underfull \hbox (badness 10000) in paragraph at lines 212--214
 
  []
 
 
-Overfull \hbox (8.67259pt too wide) in paragraph at lines 224--244
+Overfull \hbox (8.67259pt too wide) in paragraph at lines 220--240
 []$[]$ 
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (8.67259pt too wide) in paragraph at lines 257--277
+Overfull \hbox (8.67259pt too wide) in paragraph at lines 253--273
 []$[]$ 
  []
 
 [2]
-Overfull \hbox (8.67259pt too wide) in paragraph at lines 284--304
+Overfull \hbox (8.67259pt too wide) in paragraph at lines 280--300
 []$[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 306--309
+Underfull \hbox (badness 10000) in paragraph at lines 302--305
 
  []
 
 
-Underfull \hbox (badness 1478) in paragraph at lines 311--328
+Underfull \hbox (badness 1478) in paragraph at lines 307--324
 \OT1/ptm/m/n/10 con-sider tem-per-a-ture mea-sure-ments through-out the day,
  []
 
 
-Underfull \hbox (badness 1655) in paragraph at lines 311--328
+Underfull \hbox (badness 1655) in paragraph at lines 307--324
 \OT1/ptm/m/n/10 as Chang et al. (2008) do for the over-all mar-ket[4],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 311--328
+Underfull \hbox (badness 10000) in paragraph at lines 307--324
 
  []
 
 
-Underfull \hbox (badness 2856) in paragraph at lines 337--337
+Underfull \hbox (badness 2856) in paragraph at lines 333--333
 \OT1/ptm/m/n/10 mer; 2 - shoul-der
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 338--338
+Underfull \hbox (badness 10000) in paragraph at lines 334--334
 []\OT1/ptm/m/n/10 0 - Mon-day; 1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 338--338
+Underfull \hbox (badness 10000) in paragraph at lines 334--334
 \OT1/ptm/m/n/10 - Tues-day; 2 -
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 338--338
+Underfull \hbox (badness 10000) in paragraph at lines 334--334
 \OT1/ptm/m/n/10 Wednes-day; 3 -
  []
 
 
-Underfull \hbox (badness 1946) in paragraph at lines 339--339
+Underfull \hbox (badness 1946) in paragraph at lines 335--335
 []\OT1/ptm/m/n/10 Price per share of
  []
 
 
-Underfull \hbox (badness 2856) in paragraph at lines 339--339
+Underfull \hbox (badness 2856) in paragraph at lines 335--335
 \OT1/ptm/m/n/10 UNG for the first
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 340--340
+Underfull \hbox (badness 10000) in paragraph at lines 336--336
 []\OT1/ptm/m/n/10 Overnight
  []
 
 
-Underfull \hbox (badness 1460) in paragraph at lines 340--341
+Underfull \hbox (badness 1460) in paragraph at lines 336--337
 \OT1/ptm/m/n/10 share of UNG be-
  []
 
 
-Underfull \hbox (badness 2213) in paragraph at lines 340--341
+Underfull \hbox (badness 2213) in paragraph at lines 336--337
 \OT1/ptm/m/n/10 and the first trade
  []
 
 
-Underfull \hbox (badness 2213) in paragraph at lines 342--342
+Underfull \hbox (badness 2213) in paragraph at lines 338--338
 []\OT1/ptm/m/n/10 Previous Re-
  []
 
 
-Underfull \hbox (badness 3168) in paragraph at lines 342--342
+Underfull \hbox (badness 3168) in paragraph at lines 338--338
 []\OT1/ptm/m/n/10 Intraday re-turn for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 343--343
+Underfull \hbox (badness 10000) in paragraph at lines 339--339
 []\OT1/ptm/m/n/10 Mean
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 343--343
+Underfull \hbox (badness 10000) in paragraph at lines 339--339
 []\OT1/ptm/m/n/10 Degrees
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 344--344
+Underfull \hbox (badness 10000) in paragraph at lines 340--340
 []\OT1/ptm/m/n/10 Observed
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 344--344
+Underfull \hbox (badness 10000) in paragraph at lines 340--340
 []\OT1/ptm/m/n/10 Degrees
  []
 
@@ -564,51 +566,45 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 382.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 378.
 [4pdfTeX warning (ext4): destination with the same identifier (name{cite.Bib:Ve
 locityShares}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.382 \end{document}
+l.378 \end{document}
                     
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 382.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 378.
  (./comp599.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 382.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 382.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 378.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 378.
+Package rerunfilecheck Info: File `comp599.out' has not changed.
+(rerunfilecheck)             Checksum: 0914A8714C25D8415A16351BC9E5B46F;555.
 
 
-Package rerunfilecheck Warning: File `comp599.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: Checksums for `comp599.out':
-(rerunfilecheck)             Before: 33BB80A1DCBB5DDED9E04803133A6727;197
-(rerunfilecheck)             After:  0914A8714C25D8415A16351BC9E5B46F;555.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 382.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 378.
  ) 
 Here is how much of TeX's memory you used:
- 6147 strings out of 495059
- 94284 string characters out of 3182030
- 210948 words of memory out of 3000000
- 9270 multiletter control sequences out of 15000+200000
+ 6154 strings out of 495059
+ 94377 string characters out of 3182030
+ 206283 words of memory out of 3000000
+ 9277 multiletter control sequences out of 15000+200000
  39217 words of font info for 73 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,14n,28p,233b,358s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,14n,28p,486b,358s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf
--dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
-tmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on comp599.pdf (4 pages, 78323 bytes).
+e/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
+times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.p
+fb>
+Output written on comp599.pdf (4 pages, 71706 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
- 79 compressed objects within 1 object stream
+ 106 PDF objects out of 1000 (max. 8388607)
+ 95 compressed objects within 1 object stream
  28 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 89 words of extra memory for PDF output out of 10000 (max. 10000000)
 
