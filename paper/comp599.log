@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.7.14)  31 OCT 2014 01:34
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.7.14)  31 OCT 2014 01:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -580,8 +580,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 329--348
 
  []
 
-[4 <./pox.jpg> <./predicting_positive.png> <./influence_passivity.png> <./statu
-s_theory.png>]
+[4 <./status_theory.png> <./pox.jpg> <./predicting_positive.png> <./influence_p
+assivity.png>]
 Underfull \hbox (badness 4981) in paragraph at lines 351--376
 \OT1/ptm/m/n/10 In par-tic-u-lar, person-to-person rec-om-men-da-tions on a
  []
@@ -677,7 +677,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 421--422
 \OT1/ptm/m/n/8 ing Sup-port Cen-ter. Avail-able: https://courseware.e-
  []
 
-[5]
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ¢ in font ptmr7t!
 
@@ -690,7 +689,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 423--424
 \OT1/ptm/m/n/8 The In-ter-net of Peo-ple and So-cial Flneurism," Avail-able:
  []
 
-
+[5]
 Underfull \hbox (badness 4621) in paragraph at lines 425--426
 []\OT1/ptm/m/n/8 Weingart, Scott; "Net-works De-mys-ti-fied 2: De-gree," Avail-
 able:
@@ -772,17 +771,17 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 452.
 Here is how much of TeX's memory you used:
  6291 strings out of 495059
  96921 string characters out of 3182030
- 192835 words of memory out of 3000000
+ 193835 words of memory out of 3000000
  9388 multiletter control sequences out of 15000+200000
  33007 words of font info for 62 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,8n,28p,325b,433s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,8n,28p,325b,435s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.p
 fb>
-Output written on comp599.pdf (6 pages, 326715 bytes).
+Output written on comp599.pdf (6 pages, 326690 bytes).
 PDF statistics:
  165 PDF objects out of 1000 (max. 8388607)
  131 compressed objects within 2 object streams
