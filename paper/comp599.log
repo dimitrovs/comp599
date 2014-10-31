@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.7.14)  30 OCT 2014 22:44
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.7.14)  30 OCT 2014 22:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -451,10 +451,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--141
  <./social-network-grid.jpg>] <ego_network.png, id=58, 373.395pt x 362.10281pt>
 File: ego_network.png Graphic file (type png)
  <use ego_network.png>
-Package pdftex.def Info: ego_network.png used on input line 146.
+Package pdftex.def Info: ego_network.png used on input line 147.
 (pdftex.def)             Requested size: 180.67499pt x 175.21077pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--155
+Underfull \hbox (badness 10000) in paragraph at lines 155--157
 
  []
 
@@ -462,57 +462,57 @@ Underfull \hbox (badness 10000) in paragraph at lines 153--155
 File: degree_centrality.jpg Graphic file (type jpg)
 
 <use degree_centrality.jpg>
-Package pdftex.def Info: degree_centrality.jpg used on input line 159.
+Package pdftex.def Info: degree_centrality.jpg used on input line 162.
 (pdftex.def)             Requested size: 144.54pt x 49.22769pt.
 
 <betweenness_centrality.png, id=60, 157.58875pt x 53.19875pt>
 File: betweenness_centrality.png Graphic file (type png)
 
 <use betweenness_centrality.png>
-Package pdftex.def Info: betweenness_centrality.png used on input line 171.
+Package pdftex.def Info: betweenness_centrality.png used on input line 175.
 (pdftex.def)             Requested size: 108.405pt x 36.59514pt.
 
 <alpha_centrality.png, id=61, 423.5825pt x 94.3525pt>
 File: alpha_centrality.png Graphic file (type png)
 
 <use alpha_centrality.png>
-Package pdftex.def Info: alpha_centrality.png used on input line 175.
+Package pdftex.def Info: alpha_centrality.png used on input line 179.
 (pdftex.def)             Requested size: 108.405pt x 24.14665pt.
  <structural_hole.jpg, id=63, 240.9pt x 190.46156pt>
 File: structural_hole.jpg Graphic file (type jpg)
 
 <use structural_hole.jpg>
-Package pdftex.def Info: structural_hole.jpg used on input line 181.
+Package pdftex.def Info: structural_hole.jpg used on input line 185.
 (pdftex.def)             Requested size: 180.67499pt x 142.84871pt.
  <pox.jpg, id=64, 223.58531pt x 197.23688pt>
 File: pox.jpg Graphic file (type jpg)
 
 <use pox.jpg>
-Package pdftex.def Info: pox.jpg used on input line 193.
+Package pdftex.def Info: pox.jpg used on input line 197.
 (pdftex.def)             Requested size: 231.26378pt x 204.01396pt.
  <status_theory.png, id=65, 588.1975pt x 373.395pt>
 File: status_theory.png Graphic file (type png)
 
 <use status_theory.png>
-Package pdftex.def Info: status_theory.png used on input line 205.
+Package pdftex.def Info: status_theory.png used on input line 209.
 (pdftex.def)             Requested size: 231.26378pt x 146.80855pt.
 
 <predicting_positive.png, id=66, 915.42pt x 139.52126pt>
 File: predicting_positive.png Graphic file (type png)
 
 <use predicting_positive.png>
-Package pdftex.def Info: predicting_positive.png used on input line 217.
+Package pdftex.def Info: predicting_positive.png used on input line 221.
 (pdftex.def)             Requested size: 231.26378pt x 35.2464pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 228.
+(Font)              <7> on input line 232.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 228.
+(Font)              <5> on input line 232.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 228.
+(Font)              <8> on input line 232.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 228.
+(Font)              <6> on input line 232.
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--235
+Underfull \hbox (badness 10000) in paragraph at lines 231--239
 
  []
 
@@ -520,66 +520,66 @@ Underfull \hbox (badness 10000) in paragraph at lines 227--235
 File: influence_passivity.png Graphic file (type png)
 
 <use influence_passivity.png>
-Package pdftex.def Info: influence_passivity.png used on input line 238.
+Package pdftex.def Info: influence_passivity.png used on input line 242.
 (pdftex.def)             Requested size: 144.54pt x 92.20514pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--250
+Underfull \hbox (badness 10000) in paragraph at lines 244--254
 []\OT1/ptm/m/n/10 I used leave-one-out cross-validation to test the
  []
 
 
-Underfull \hbox (badness 6428) in paragraph at lines 240--250
+Underfull \hbox (badness 6428) in paragraph at lines 244--254
 \OT1/ptm/m/n/10 per-for-mance of my dataset with lo-gis-tic re-gres-sion,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--250
+Underfull \hbox (badness 10000) in paragraph at lines 244--254
 
  []
 
 [2 <./betweenness_centrality.png> <./alpha_centrality.png> <./social-network.pd
 f> <./influence_passivity.png> <./f03.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 262--270
+Underfull \hbox (badness 10000) in paragraph at lines 266--274
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 273--275
+Underfull \hbox (badness 10000) in paragraph at lines 277--279
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--288
+Underfull \hbox (badness 10000) in paragraph at lines 289--292
 
  []
 
 
-Underfull \hbox (badness 1478) in paragraph at lines 290--307
+Underfull \hbox (badness 1478) in paragraph at lines 294--311
 \OT1/ptm/m/n/10 con-sider tem-per-a-ture mea-sure-ments through-out the day,
  []
 
 
-Underfull \hbox (badness 1655) in paragraph at lines 290--307
+Underfull \hbox (badness 1655) in paragraph at lines 294--311
 \OT1/ptm/m/n/10 as Chang et al. (2008) do for the over-all mar-ket[4],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--307
+Underfull \hbox (badness 10000) in paragraph at lines 294--311
 
  []
 
 [3 <./open-triad.jpg> <./ego_network.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 323--324
+Underfull \hbox (badness 10000) in paragraph at lines 327--328
 []\OT1/ptm/m/n/8 How to Use Crowd-sourc-ing in the Class-room. Avail-able:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 323--324
+Underfull \hbox (badness 10000) in paragraph at lines 327--328
 \OT1/ptm/m/n/8 http://www.hollyclark.org/2013/11/03/how-to-use-crowdsourcing-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 327--328
+Underfull \hbox (badness 10000) in paragraph at lines 331--332
 []\OT1/ptm/m/n/8 An ex-am-ple of a so-cial net-work di-a-gram. Avail-able:
  []
 
@@ -587,57 +587,57 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--332
+Underfull \hbox (badness 10000) in paragraph at lines 335--336
 []\OT1/ptm/m/n/8 Examples of dyads. United States Army Train-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--332
+Underfull \hbox (badness 10000) in paragraph at lines 335--336
 \OT1/ptm/m/n/8 ing Sup-port Cen-ter. Avail-able: https://courseware.e-
  []
 
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ¢ in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 333--334
+Underfull \hbox (badness 10000) in paragraph at lines 337--338
 []\OT1/ptm/m/n/8 Tufekci, Zeynep; "Is the So-cial Web Less Sur-pris-ing?
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 333--334
+Underfull \hbox (badness 10000) in paragraph at lines 337--338
 \OT1/ptm/m/n/8 The In-ter-net of Peo-ple and So-cial Flneurism," Avail-able:
  []
 
 
-Underfull \hbox (badness 4621) in paragraph at lines 335--336
+Underfull \hbox (badness 4621) in paragraph at lines 339--340
 []\OT1/ptm/m/n/8 Weingart, Scott; "Net-works De-mys-ti-fied 2: De-gree," Avail-
 able:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 337--338
+Underfull \hbox (badness 10000) in paragraph at lines 341--342
 []\OT1/ptm/m/n/8 Keung, Tim; "So-cial / Or-ga-ni-za-tional Net-work Anal-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 337--338
+Underfull \hbox (badness 10000) in paragraph at lines 341--342
 \OT1/ptm/m/n/8 y-sis: Com-mon Ter-mi-nol-ogy (Part 3)," Avail-able:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 337--338
+Underfull \hbox (badness 10000) in paragraph at lines 341--342
 \OT1/ptm/m/n/8 http://hr.toolbox.com/blogs/organizational-network-mapping/socia
 l-
  []
 
 
-Overfull \hbox (46.0817pt too wide) in paragraph at lines 339--340
+Overfull \hbox (46.0817pt too wide) in paragraph at lines 343--344
 []\OT1/ptm/m/n/8 Betweenness cen-tral-ity, Avail-able: http://en.wikipedia.org/
 wiki/Betweenness[]centrality 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 343--344
+Underfull \hbox (badness 10000) in paragraph at lines 347--348
 \OT1/ptm/m/n/8 Haystack," Avail-able: http://www.ams.org/samplings/feature-
  []
 
@@ -646,12 +646,12 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
 
-Underfull \hbox (badness 6236) in paragraph at lines 357--358
+Underfull \hbox (badness 6236) in paragraph at lines 361--362
 []\OT1/ptm/m/n/8 Jure Leskovec, Lada A. Adamic, and Bernardo A. Hu-ber-
  []
 
 
-Underfull \hbox (badness 7238) in paragraph at lines 357--358
+Underfull \hbox (badness 7238) in paragraph at lines 361--362
 \OT1/ptm/m/n/8 man. 2007. The dy-nam-ics of vi-ral mar-ket-ing. ACM Trans.
  []
 
@@ -666,28 +666,28 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 362.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 366.
 [5pdfTeX warning (ext4): destination with the same identifier (name{cite.Bib:Le
 skovec}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.362 \end{document}
+l.366 \end{document}
                     
 
  <./status_theory.png> <./predicting_positive.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 362.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 366.
 
 (./comp599.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 362.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 362.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 366.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 366.
 Package rerunfilecheck Info: File `comp599.out' has not changed.
 (rerunfilecheck)             Checksum: 72ACBF2B50C4AD8DD500D3F59BEBC07A;517.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 362.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 366.
  ) 
 Here is how much of TeX's memory you used:
  6248 strings out of 495059
@@ -702,7 +702,7 @@ e/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.p
 fb>
-Output written on comp599.pdf (5 pages, 322570 bytes).
+Output written on comp599.pdf (5 pages, 322578 bytes).
 PDF statistics:
  168 PDF objects out of 1000 (max. 8388607)
  136 compressed objects within 2 object streams
