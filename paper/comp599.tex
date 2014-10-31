@@ -72,30 +72,18 @@ This paper surveys a number of existing works on the topic of Social Network Ana
 
 % key words
 \begin{keywords}
-Gas, equities, returns, weather, prediction
+Social, network, influence, viral, marketing
 \end{keywords}
 
-\section{Problem description}
+\section{Introduction}
 % no \PARstart
-This work is motivated by the UGAZ and DGAZ ETNs (Exchange Traded Notes) which are linked to
-the S\&P GSCI® Natural Gas Index ER and track 3 times the daily performance of the index[1][2].
-UGAZ will normally rise with the increase of gas prices, while DGAZ will fall by the same amount. In addition
-to gas contracts, trader speculation about the future direction of gas prices also affects the returns of UGAZ and
-DGAZ. Thus, the two products are highly volatile and offer traders an opportunity for a substantial intraday profit (or loss).
-By predicting the direction of gas contracts at market open, a trader can decide
-whether to trade DGAZ or UGAZ and hence profit in both cases, when gas prices are declining or rising. \\
+With the growing popularity of mobile devices and the omnipresence of high speed Internet connections, online social networks such as Twitter and Facebook have emerged to connect individuals and organizations.
+Thus, it is of great interest to study the underlying theories which explain the formation, structure and functioning of social networks. Sociologists and psychologysts have made great progress in modeling human behaviour and relationships, 
+the balance of power and influence in groups and the ideas powering viral information propagation in society. This paper aims to investigate the applicability of these existing theories to the recently emerged online social network services.
+Gaining better understanding of the science behind these services will facilitate future work to solve important problems in social networks such as the identification of malicious or automated accounts publishing undesired commercial messages (SPAM) in social networks.\\
 \indent
-As the UGAZ \& DGAZ ETNs were created in 2012, there is a very limited amount of data available 
-for training. Instead, I am using the UNG ETF (Exchange Traded Fund) end of day data. This 
-instrument is similar to UGAZ as it also tracks the daily changes in natural gas prices, 
-but it is not triple leveraged. \\
-\indent
-The prediction question is then a binary classification one, namely: given the daily temperature 
-in New York City, the open price of UNG for the day, the change from the last closing price (overnight change) and the previous day's intraday 
-return, predict whether today's intraday return will be a positive or a negative one. With this information a 
-trader can profit by buying UGAZ at market open (if return is positive) or DGAZ (if return is predicted negative)
-and selling before market close. \\
-%\hfill mds
+The following section presents an overview of existing works related to Social Network Analysis, which form the foundation for this paper. Later we define the most important concepts for the study of social networks, such as actors, relations and centrality.
+Then we focus on influence in social networks and viral marketing. Finally, we conclude with a summary of our study.\\
 %\hfill August 13, 2002
 
 \section{Related work}
@@ -111,7 +99,7 @@ weather measurements and deviations from the mean temperature for a given day. W
 weather shocks on gas features returns, he does not look into the psychological influence of weather variations on traders. \\
 
 
-\section{Dataset description}
+\section{Definition}
 The dataset consists of 1847 examples with 8 features which may be related to the direction of daily returns of a gas security,
 and a result column which indicates if the returns were negative (0) or positive (1). The features I have chosen for this dataset 
 are: day of year (mapped to mean temperature), season, day of week, the price of the security at market open, its change overnight, 
@@ -123,7 +111,7 @@ June, July, August: 1 (summer);
 April, May, September, October: 2 (shoulder) [3] \\
 
 
-\section{Methods}
+\section{Influence}
 In preparing the dataset I first used the Google Finance feature of Google Spreadsheets to obtain end of day data for UNG
 since inception (2007-04-18) until 2014-09-17\footnote{https://support.google.com/docs/answer/3093281?hl=en}. Then I processed 
 the data to generate the Return, Day of Year, Season, Day of Week, Open, Overnight Change and Previous Return columns.
@@ -143,7 +131,7 @@ every classifier. I also implemented a "baseline" classifier which always choose
 \indent I repeated all tests with half of the training data in order to evaluate how changing the data size affects the
 performance of the classifiers. \\
 
-\section{Results}
+\section{Viral Marketing}
 
 % An example of a floating figure using the graphicx package.
 % Note that \label must occur AFTER (or within) \caption.
@@ -303,7 +291,7 @@ While not shown, I did try various combinations of dimensions with all three cla
 based on the results above, the model with all 8 dimensions is able to predict the direction of daily returns for natural gas securities slightly
 better than the baseline, when used with Logistic Regression classifier (see fig.1) . \\
 
-\section{Discussion}
+\section{Conclusion}
 This is a first attempt at creating a dataset linking weather variations to intraday trading returns for a gas security. I chose the dimensions for this
 dataset based primarily on empirical observations, but also validated their relevance using the leave-one-out cross-validation method. Predicting intraday
 returns for any security, especially one as volatile as UNG, is a very challenging task. While the proposed dataset performs less than perfectly, it can be
@@ -321,32 +309,6 @@ particularly with respect to gas equities. If enough DGAZ/UGAZ data is available
 returns offered by these instruments. Other variables, such as the market demand/supply numbers, can help predict the trend for gas prices. At the same time, the
 day when these numbers are reported experiences unusual returns and volatility [3]. Augmenting the daily returns prediction model with the aforementioned extra
 dimensions could improve its performance, hence it would be a worthwhile direction of further research. \\
-
-\section{Appendix}
-Data Dictionary:
-\begin{center}
-    \begin{tabular}{ | p{2cm} | p{1.5cm} | p{3cm} |}
-    \hline
-    Column & Units & Description \\ \hline
-    Return & N/A & Intraday return: 0 - negative; 1 - positive \\ \hline
-    Day of Year & N/A & The day of year from 1 to 366. This is used for temperature. \\ \hline
-    Season & N/A & 0 - winter; 1 - summer; 2 - shoulder (fall \& spring) \\ \hline
-    Day of Week & N/A & 0 - Monday; 1 - Tuesday; 2 - Wednesday; 3 - Thursday; 4 - Friday \\ \hline
-    Open & USD & Price per share of UNG for the first trade during market hours of the day. \\ \hline
-    Overnight Change & \% & Change in price per share of UNG between the last trade during market
-    hours of the previous day and the first trade during market hours of the current day \\ \hline
-    Previous Return & \% & Intraday return for the previous trading day \\ \hline
-    Mean Temperature & Degrees Celsius & Mean temperature in NYC for the current day of the year \\ \hline
-    Observed Temperature & Degrees Celsius & Average temperature in NYC on the current day \\ \hline
-    \end{tabular}
-\end{center}
-
-% use section* for acknowledgment
-\section*{Acknowledgment}
-% optional entry into table of contents (if used)
-%\addcontentsline{toc}{section}{Acknowledgment}
-"We hereby state that all the work presented in 
-this report is that of the authors."
 
 % trigger a \newpage just before the given reference
 % number - used to balance the columns on the last page
