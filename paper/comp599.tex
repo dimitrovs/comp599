@@ -100,6 +100,22 @@ weather shocks on gas features returns, he does not look into the psychological 
 
 
 \section{Definition}
+
+% An example of a floating figure using the graphicx package.
+% Note that \label must occur AFTER (or within) \caption.
+% For figures, \caption should occur after the \includegraphics.
+\begin{center}
+\begin{figure}[hb]
+\centering
+%\includegraphics{imagen1.eps}
+\includegraphics[width=3.2in]{social-network-grid}
+\caption{
+A graph of a social network. The thikness of lines represents the strength of relations between actors. [1]
+}
+\label{fig_sim}
+\end{figure}
+\end{center}
+
 The dataset consists of 1847 examples with 8 features which may be related to the direction of daily returns of a gas security,
 and a result column which indicates if the returns were negative (0) or positive (1). The features I have chosen for this dataset 
 are: day of year (mapped to mean temperature), season, day of week, the price of the security at market open, its change overnight, 
@@ -140,28 +156,7 @@ performance of the classifiers. \\
 \subsection{Logistic Regression}
 I first performed logistic regression with half of the dataset (923 samples):
 
-\begin{table}[h]
-% increase table row spacing, adjust to taste
-\renewcommand{\arraystretch}{1.2}
-\renewcommand{\thefootnote}{\alph{footnote}}
-\caption{Logistic Regression (923 samples)} \label{table1}
-\begin{minipage} {0.5\textwidth}
-\begin{center}
-    \begin{tabular}{ | c | c | c |}
-    \hline
-    d & Error\textsubscript{train} & Error\textsubscript{valid} \\ \hline
-    Baseline & 0.4702 & 0.4702 \\ \hline
-    2 & 0.4702 & 0.4702 \\ \hline
-    3 & 0.4605 & 0.5439 \\ \hline
-    4 & 0.4504 & 0.4680 \\ \hline
-    5 & 0.4568 & 0.4637 \\ \hline
-    6 & 0.4529 & 0.4670 \\ \hline
-    7 & 0.4155 & 0.4323 \\ \hline
-    8 & 0.4131 & 0.4301 \\ \hline
-    \end{tabular}
-\end{center}
-\end{minipage}
-\end{table}
+
 
 As demonstrated in table 1, the model performs slightly better than the baseline (always choosing the most popular result). It appears that adding weather measurements (mean and
 observed temperature) helps reduce both the training error rate and the estimated true prediction error.\\
@@ -172,60 +167,11 @@ help in predicting the direction of gas equities, and they could be an interesti
 \indent A slight overfitting can be observed when adding the overnight return variable to the larger dataset. What is interesting
 is that adding mean temperature alone does not improve performance, but adding the observed temperature does. \\
 
-\begin{table}[h]
-% increase table row spacing, adjust to taste
-\renewcommand{\arraystretch}{1.2}
-\renewcommand{\thefootnote}{\alph{footnote}}
-\caption{Logistic Regression (1847 samples)} \label{table2}
-\begin{minipage} {0.5\textwidth}
-\begin{center}
-    \begin{tabular}{ | c | c | c |}
-    \hline
-    d & Error\textsubscript{train} & Error\textsubscript{valid} \\ \hline
-    Baseline & 0.4694 & 0.4694 \\ \hline
-    2 & 0.4694 & 0.4694 \\ \hline
-    3 & 0.4694 & 0.4694 \\ \hline
-    4 & 0.4613 & 0.4613 \\ \hline
-    5 & 0.4578 & 0.4694 \\ \hline
-    6 & 0.4438 & 0.4510 \\ \hline
-    7 & 0.4450 & 0.4564 \\ \hline
-    8 & 0.4387 & 0.4499 \\ \hline
-    \end{tabular}
-\end{center}
-\end{minipage}
-\end{table}
-
 \subsection{LDA}
 
 Table 3 summarizes the results of the LDA classifier. Similar results were obtained as with Logistic Regression. LDA performs even better on the smaller dataset,
 but performs worse than Logistic Regression on the full dataset. \\
 
-\begin{table}[h]
-% increase table row spacing, adjust to taste
-\renewcommand{\arraystretch}{1.2}
-\renewcommand{\thefootnote}{\alph{footnote}}
-\caption{LDA} \label{table3}
-\begin{minipage} {0.5\textwidth}
-\begin{center}
-    \begin{tabular}{ | c | c | c | c | c |}
-    \hline
-\multirow{2}{0.1in}{} 
-& \multicolumn{2}{|c|}{923 samples} & \multicolumn{2}{|c|}{1847 samples} \\
-\cline{2-4}
-    \hline
-    d & Error\textsubscript{train} & Error\textsubscript{valid} & Error\textsubscript{train} & Error\textsubscript{valid} \\ \hline
-    Baseline & 0.4702 & 0.4702 & 0.4694 & 0.4694 \\ \hline
-    2 & 0.4702 & 0.4702 & 0.4694 & 0.4694 \\ \hline
-    3 & 0.4603 & 0.5439 & 0.4694 & 0.4694 \\ \hline
-    4 & 0.4504 & 0.4659 & 0.4613 & 0.4613 \\ \hline
-    5 & 0.4567 & 0.4637 & 0.4579 & 0.4700 \\ \hline
-    6 & 0.4526 & 0.4702 & 0.4496 & 0.4591 \\ \hline
-    7 & 0.4138 & 0.4312 & 0.4528 & 0.4683 \\ \hline
-    8 & 0.4139 & 0.4280 & 0.4473 & 0.4586 \\ \hline
-    \end{tabular}
-\end{center}
-\end{minipage}
-\end{table}
 
 \subsection{Naive Bayes}
 Table 4 shows the results of running the scikit-learn Naive Bayes classifier. The Naive Bayes classifier performs the worst of all three evaluated in this paper. A possible reason
@@ -233,59 +179,7 @@ would be that the dataset dimensions are not truly independent: season for examp
 I also implemented a Naive Bayes classifier, but it is much slower than the Scikit-learn version. Yet, the results are the same
 (apart for some very slight differences on the smaller dataset which I attribute to including the header line in the row count and rounding). The results of my classifier
 can be seen on Table 5.
-\begin{table}[h]
-% increase table row spacing, adjust to taste
-\renewcommand{\arraystretch}{1.2}
-\renewcommand{\thefootnote}{\alph{footnote}}
-\caption{Naive Bayes - Scikit-learn} \label{table3}
-\begin{minipage} {0.5\textwidth}
-\begin{center}
-    \begin{tabular}{ | c | c | c | c | c |}
-    \hline
-\multirow{2}{0.1in}{} 
-& \multicolumn{2}{|c|}{923 samples} & \multicolumn{2}{|c|}{1847 samples} \\
-\cline{2-4}
-    \hline
-    d & Error\textsubscript{train} & Error\textsubscript{valid} & Error\textsubscript{train} & Error\textsubscript{valid} \\ \hline
-    Baseline & 0.4702 & 0.4702 & 0.4694 & 0.4694 \\ \hline
-    2 & 0.4702 & 0.4702 & 0.4694 & 0.4694 \\ \hline
-    3 & 0.4561 & 0.4561 & 0.4654 & 0.5912 \\ \hline
-    4 & 0.4605 & 0.4800 & 0.4613 & 0.4613 \\ \hline
-    5 & 0.4460 & 0.4615 & 0.4574 & 0.4802 \\ \hline
-    6 & 0.4556 & 0.4724 & 0.4709 & 0.4727 \\ \hline
-    7 & 0.4140 & 0.4301 & 0.4629 & 0.4651 \\ \hline
-    8 & 0.4058 & 0.4334 & 0.4608 & 0.4656 \\ \hline
-    \end{tabular}
-\end{center}
-\end{minipage}
-\end{table}
 
-\begin{table}[h]
-% increase table row spacing, adjust to taste
-\renewcommand{\arraystretch}{1.2}
-\renewcommand{\thefootnote}{\alph{footnote}}
-\caption{Naive Bayes - pure Python} \label{table3}
-\begin{minipage} {0.5\textwidth}
-\begin{center}
-    \begin{tabular}{ | c | c | c | c | c |}
-    \hline
-\multirow{2}{0.1in}{} 
-& \multicolumn{2}{|c|}{924 samples} & \multicolumn{2}{|c|}{1847 samples} \\
-\cline{2-4}
-    \hline
-    d & Error\textsubscript{train} & Error\textsubscript{valid} & Error\textsubscript{train} & Error\textsubscript{valid} \\ \hline
-    Baseline & 0.4702 & 0.4702 & 0.4694 & 0.4694 \\ \hline
-    2 & 0.4708 & 0.4708 & 0.4694 & 0.4694 \\ \hline
-    3 & 0.4567 & 0.4567 & 0.4654 & 0.5912 \\ \hline
-    4 & 0.4611 & 0.4805 & 0.4613 & 0.4613 \\ \hline
-    5 & 0.4440 & 0.4665 & 0.4574 & 0.4802 \\ \hline
-    6 & 0.4521 & 0.4773 & 0.4709 & 0.4727 \\ \hline
-    7 & 0.4144 & 0.4307 & 0.4629 & 0.4651 \\ \hline
-    8 & 0.4054 & 0.4351 & 0.4608 & 0.4651 \\ \hline
-    \end{tabular}
-\end{center}
-\end{minipage}
-\end{table}
 
 While not shown, I did try various combinations of dimensions with all three classifiers and experienced similar or worse results. Therefore,
 based on the results above, the model with all 8 dimensions is able to predict the direction of daily returns for natural gas securities slightly
