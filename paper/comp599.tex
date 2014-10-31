@@ -66,7 +66,10 @@
 % make the title area
 \maketitle
 \begin{abstract}
-This paper surveys a number of existing works on the topic of Social Network Analysis and presents some of the most essential concepts in the field. We focus on issues such as the definition of a Social Network and Social Network Analysis, important theories from sociology and psychology applicable to social networks in the digital age, the concept of influence and its importance for the analysis of social networks, and the buzzword technique known as Viral Marketing.
+This paper surveys a number of existing works on the topic of Social Network Analysis and presents some of the most essential concepts in the field.
+We focus on issues such as the definition of a Social Network and Social Network Analysis, important theories from sociology and psychology applicable
+to social networks in the digital age, the concept of influence and its importance for the analysis of social networks, and the buzzword technique
+known as Viral Marketing.
 \\
 \end{abstract}
 
@@ -77,10 +80,16 @@ Social, network, influence, viral, marketing
 
 \section{Introduction}
 % no \PARstart
-With the growing popularity of mobile devices and the omnipresence of high speed Internet connections, online social networks such as Twitter and Facebook have emerged to connect individuals and organizations.
-Thus, it is of great interest to study the underlying theories which explain the formation, structure and functioning of social networks. Sociologists and psychologysts have made great progress in modeling human behaviour and relationships, 
-the balance of power and influence in groups and the ideas powering viral information propagation in society. This paper aims to investigate the applicability of these existing theories to the recently emerged online social network services.
-Gaining better understanding of the science behind these services will facilitate future work to solve important problems in social networks such as the identification of malicious or automated accounts publishing undesired commercial messages (SPAM) in social networks.\\
+With the growing popularity of mobile devices and the omnipresence of high speed Internet connections,
+online social networks such as Twitter and Facebook have emerged to connect individuals and organizations.
+Thus, it is of great interest to study the underlying theories which explain the formation, structure and
+functioning of social networks. Sociologists and psychologysts have made great progress in modeling human
+behaviour and relationships, the balance of power and influence in groups and the ideas powering viral
+information propagation in society. This paper aims to investigate the applicability of these existing
+theories to the recently emerged online social network services.
+Gaining better understanding of the science behind these services will facilitate future work to solve
+important problems in social networks such as the identification of malicious or automated accounts
+publishing undesired commercial messages (SPAM) in social networks.\\
 \indent
 The following section defines the most important concepts for the study of social networks, such as actors, relations and centrality.
 Then we focus on influence in social networks and viral marketing. Finally, we conclude with a summary of our study.\\
@@ -97,11 +106,10 @@ A graph of a social network. The thikness of lines represents the strength of re
 \end{figure}
 \end{center}
 \section{Definition}
-
 \indent
-Social networks have been studied in society long before the existance of Internet. For example, Wikipedia defines a Social Network as: "a social structure made up of a set of social actors (such as
-individuals or organizations) and a set of the dyadic ties between these actors,"[2] and this definition can also explain an online social network like Twitter or Facebook (fig. 1).\\
-
+Social networks have been studied in society long before the existance of Internet. For example, Wikipedia defines a Social Network
+as: "a social structure made up of a set of social actors (such as individuals or organizations) and a set of the dyadic ties 
+between these actors,"[2] and this definition can also explain an online social network like Twitter or Facebook (fig. 1).\\
 \begin{center}
 \begin{figure}[hb]
 \centering
@@ -113,9 +121,14 @@ An actor (vertice) can be an individual or organization. [3]
 \label{fig_sim}
 \end{figure}
 \end{center}
-Graph Theory is often applied to model social networks. In this case we define actors (vertices), see fig. 2,  as individuals or organizations that participate in relationships. Again, this definition is closely related to the one given by Wasserman et al. in 1984 with respect to social and behavioural sciences: "Actors are discrete individual, corporate, or collective social units"[4]. \\
-We can say that online social networks closely mirror the structure of the existing relationships in society. Thus, a relationship between two nodes can be modelled as a an edge in a graph. It is also known as a tie, or the link between a pair of actors [4]. Depending on the social network, the link can be directed (eg. a follower on Twitter) or undirected (eg. a friend on Facebook). It can also be signed or unsigned; mutual or not. \\
-
+Graph Theory is often applied to model social networks. In this case we define actors (vertices), see fig. 2,  
+as individuals or organizations that participate in relationships. Again, this definition is closely related 
+to the one given by Wasserman et al. in 1984 with respect to social and behavioural sciences: "Actors are discrete 
+individual, corporate, or collective social units"[4]. \\
+We can say that online social networks closely mirror the structure of the existing relationships in society.
+Thus, a relationship between two nodes can be modelled as a an edge in a graph. It is also known as a tie, or
+the link between a pair of actors [4]. Depending on the social network, the link can be directed (eg. a follower
+on Twitter) or undirected (eg. a friend on Facebook). It can also be signed or unsigned; mutual or not. \\
 \begin{center}
 \begin{figure}[hb]
 \centering
@@ -127,9 +140,11 @@ A dyad: two nodes and the edge between them. [5]
 \label{fig_sim}
 \end{figure}
 \end{center}
-
 Two nodes examined together with the relationship between them constitute a dyad (fig. 3). \\
-When we consider a third node in addition to the existing two, we get a group of three actors which is known as a "triad". The concept of triad is important because it allows us to study the balance between the links in a signed network (Balance Theory) as well as the transitivity and network closure well known in the fields of sociology and psychology (fig. 4).\\
+When we consider a third node in addition to the existing two, we get a group of three actors which is known 
+as a "triad". The concept of triad is important because it allows us to study the balance between the links in a
+signed network (Balance Theory) as well as the transitivity and network closure well known in the fields of
+sociology and psychology (fig. 4).\\
 \begin{center}
 \begin{figure}[hb]
 \centering
@@ -141,10 +156,10 @@ A triad: three nodes and the edges between them. [6]
 \label{fig_sim}
 \end{figure}
 \end{center}
-These theories have application to online social networks for the purpose of discovering links which are not explicit (eg. suggesting friends on Facebook or LinkedIn) and for recommending content based on the tastes of friends we "like".\\
+These theories have application to online social networks for the purpose of discovering links which are not
+explicit (eg. suggesting friends on Facebook or LinkedIn) and for recommending content based on the tastes of friends we "like".\\
 
 \subsection{Centrality}
-
 \begin{center}
 \begin{figure}[hb]
 \centering
@@ -156,11 +171,10 @@ An influential node with high degree centrality. [7]
 \label{fig_sim}
 \end{figure}
 \end{center}
-
 \indent
-Centrality is an important concept in graph theory as it identifies the most important (or influential) vertices in a graph (fig. 5). With respect to social networks analysis, measuring centrality allows us to study the structure of the network and measures of influence that actors have.\\
-
-One type of centrality is degree centrality. It is defined as the number of ties a node has; the simplest way to measure centrality. In directed networks such as Twitter there are two types (fig. 6): indegree, measuring the number of ties to the node (followers), and outdegree - the number of ties from the node (following). Indegree in particular is an important concept for social networks because it expresses the popularity of a given node. \\
+Centrality is an important concept in graph theory as it identifies the most important (or influential)
+vertices in a graph (fig. 5). With respect to social networks analysis, measuring centrality allows us to
+study the structure of the network and measures of influence that actors have.\\
 \begin{center}
 \begin{figure}[hb]
 \centering
@@ -172,31 +186,45 @@ In degree and out degree in a directional social network. [8]
 \label{fig_sim}
 \end{figure}
 \end{center}
-
+\indent
+One type of centrality is degree centrality. It is defined as the number of ties a node has; the simplest
+way to measure centrality. In directed networks such as Twitter there are two types (fig. 6): indegree,
+measuring the number of ties to the node (followers), and outdegree - the number of ties from the node
+(following). Indegree in particular is an important concept for social networks because it expresses
+the popularity of a given node. \\
 \indent
 A second type of centrality measure is betweenness centrality. It can be expressed as g(v):
 
 \centerline{
   \includegraphics[width=1.5in]{betweenness_centrality.png}
 }
-
-where the numerator represents the total number of shortest paths through a vertice v, while the denominator is the total number of shortest paths. This measure is particularly useful for networks where information is known to always take the shortest path. In such networks high betweenness centrality indicates high influence on the transfer of information through the network. It allows us to indetify the number of times a node acts as a bridge between two nodes.\\
+where the numerator represents the total number of shortest paths through a vertice v, while the denominator
+is the total number of shortest paths. This measure is particularly useful for networks where information is
+known to always take the shortest path. In such networks high betweenness centrality indicates high influence
+on the transfer of information through the network. It allows us to indetify the number of times a node acts
+as a bridge between two nodes.\\
 \indent
-Another type of centrality is closeness centrality, defined as the inverse of the sum of the distances from a node to all other nodes [10]. It can be useful for studies of information propagation within social networks.\\
+Another type of centrality is closeness centrality, defined as the inverse of the sum of the distances from
+a node to all other nodes [10]. It can be useful for studies of information propagation within social networks.\\
 \indent
-A very important measure is eigenvector centrality. We can look at eigenvector centrality as a generalization of PageRank [11]. Just like PageRank measures the importance of a webpage on the Internet relative to other webpages, eigenvector centrality measures the influence of a node in a social network. It assigns relative scores to nodes, with nodes of higher scores contributing more than a large number of nodes of lower scores. \\
+A very important measure is eigenvector centrality. We can look at eigenvector centrality as a generalization
+of PageRank [11]. Just like PageRank measures the importance of a webpage on the Internet relative to other
+webpages, eigenvector centrality measures the influence of a node in a social network. It assigns relative
+scores to nodes, with nodes of higher scores contributing more than a large number of nodes of lower scores. \\
 \indent
-Eigenvector centrality can be augmented to account for "external influence" which is often present on social networks. For instance, a famous person on Twitter may be followed by other famous people which makes her influential as measured by eigenvector centrality, but she may also be influential because of her real life popularity. The alpha centrality of a node x can be expressed as:\\
+Eigenvector centrality can be augmented to account for "external influence" which is often present on social
+networks. For instance, a famous person on Twitter may be followed by other famous people which makes her
+influential as measured by eigenvector centrality, but she may also be influential because of her real life
+popularity. The alpha centrality of a node x can be expressed as:\\
 
 \centerline{
-  \includegraphics[width=1.5in]{alpha_centrality.png}
+  \includegraphics[width=2.0in]{alpha_centrality.png}
 }
-
-Where alpha is a tradeoff constant between links and external influence. When alpha is equal to 0 only external influence determines alpha centrality. On the other hand, as alpha approaches infinity alpha centrality becomes equal to eigenvector centrality.\\
+Where alpha is a tradeoff constant between links and external influence. When alpha is equal to 0 only
+external influence determines alpha centrality. On the other hand, as alpha approaches infinity alpha
+centrality becomes equal to eigenvector centrality.\\
 
 \subsection{Structural holes}
-
-In networks with homogeneous vertices (e.g. students who finished the same university) we observe the formation of clusters. Clusters are characterized by strong ties between the vertices within them and fewer (or weaker) ties to vertices outside of the cluster. When two clusters contain non-overlapping information, there is a structural hole between them. Nodes "bridging" the structural holes are called "borkers" and can leverage social capital (fig. 7). \\
 \begin{center}
 \begin{figure}[hb]
 \centering
@@ -208,8 +236,14 @@ A structural hole in a triad. [12]
 \label{fig_sim}
 \end{figure}
 \end{center}
-
-For example, a structural hole can exist between the amlumni of an academia and the employees of a company on LinkedIn. An alumna who graduated from the academia and is currently employed by the company can act as a broker in recruiting talent for her employer and in helping her fellow alumni secure employment.\\
+In networks with homogeneous vertices (e.g. students who finished the same university) we observe the
+formation of clusters. Clusters are characterized by strong ties between the vertices within them and fewer
+(or weaker) ties to vertices outside of the cluster. When two clusters contain non-overlapping information,
+there is a structural hole between them. Nodes "bridging" the structural holes are called "borkers" and can
+leverage social capital (fig. 7). \\
+For example, a structural hole can exist between the amlumni of an academia and the employees of a company
+on LinkedIn. An alumna who graduated from the academia and is currently employed by the company can act as
+a broker in recruiting talent for her employer and in helping her fellow alumni secure employment.\\
 
 \subsection{Signed social networks}
 
@@ -224,11 +258,14 @@ Fritz Heider's P-O-X model. [14]
 \label{fig_sim}
 \end{figure}
 \end{center}
-
-In some social networks the links between vertices can be signed: positive or negative. These social networks (eg. Epinions, Slashdot) allow their users to explicitly express their sentiment with respect to the relation they have with other users.\\
-In other cases, up-voting ("liking") or down-voting content can also indicate sentiment towards users. A relation in a social network is positive or negative depending on the attitude of the originator towards the target of the relation [13]. Leskovec et al., demonstrate that an unknown sentiment can be inferred from the signs of surrounding nodes, and this problem is similar to link prediction.
-Furthermore, identifying the negative edges in a social network can help predict positive edges, which were not previously known (fig. 10) [13]. \\
-
+In some social networks the links between vertices can be signed: positive or negative. These social networks
+(eg. Epinions, Slashdot) allow their users to explicitly express their sentiment with respect to the relation
+they have with other users.\\
+In other cases, up-voting ("liking") or down-voting content can also indicate sentiment towards users.
+A relation in a social network is positive or negative depending on the attitude of the originator towards the
+target of the relation [13]. Leskovec et al., demonstrate that an unknown sentiment can be inferred from the
+signs of surrounding nodes, and this problem is similar to link prediction. Furthermore, identifying the
+negative edges in a social network can help predict positive edges, which were not previously known (fig. 10) [13]. \\
 \begin{center}
 \begin{figure}[hb]
 \centering
@@ -240,10 +277,14 @@ Accuracy of predicting positive and negative edges for three social networks. [1
 \label{fig_sim}
 \end{figure}
 \end{center}
-
-One of the approaches Leskovec et al. apply to the problem of predicting unknown signs in social networks is Fritz Heider's Balance Theory (1958). This theory can be expressed as a P-O-X model (fig. 8) where p, o and x are nodes in a signed network. Khanafiah et al. explain the P-O-X model as: "Sentiment relation p and x is determined by an attitude of p and x toward o. If the multiplication of signs of these relations is positive, then the balance state is achieved." [14] \\
-Thus, for a triad to be in a balanced state it should have either three positive links or two negative links and one positive link. By applying this theory to a triad in a social network for which we know the signs of two of the links, we can predict the sign of the third, assuming the triad is balanced.\\
-
+One of the approaches Leskovec et al. apply to the problem of predicting unknown signs in social networks
+is Fritz Heider's Balance Theory (1958). This theory can be expressed as a P-O-X model (fig. 8)
+where p, o and x are nodes in a signed network. Khanafiah et al. explain the P-O-X model as: "Sentiment
+relation p and x is determined by an attitude of p and x toward o. If the multiplication of signs of these
+relations is positive, then the balance state is achieved." [14] \\
+Thus, for a triad to be in a balanced state it should have either three positive links or two negative links
+and one positive link. By applying this theory to a triad in a social network for which we know the signs of
+two of the links, we can predict the sign of the third, assuming the triad is balanced.\\
 \begin{center}
 \begin{figure}[hb]
 \centering
@@ -255,10 +296,18 @@ Flipping the direction of an edge according to Status Theory.
 \label{fig_sim}
 \end{figure}
 \end{center}
-
-Another theory Leskovec et al. apply to signed social networks is the Status Theory, which they define as: "Given a positive, directed, edge (x,y) from x to y, x regards y as having higher status, conversly, a negative edge indicates that x regards y as having lower status. Flipping the direction of an edge, also flips its sign." [13] As demonstrared on figure 9, given a signed directed network and three nodes (v,u,w) , if we know the signs of the links between v and w, and u and w, then we can infer the sign of the link between u and v. \\
-As demonstrated by Leskovec et al., Status Theory is another approach that can be used to predict an unknown sign. However, Balance Theory and Status Theory do not always agree on the sign prediction. Status Theory assumes a directed graph, hence it may be more suitable than Balance Theory for modelling signed directed social networks.\\
-These findings are truly important because predicting positive edges in signed social networks is useful for recommending content and for making friend suggestions.\\
+Another theory Leskovec et al. apply to signed social networks is the Status Theory, which they define as:
+"Given a positive, directed, edge (x,y) from x to y, x regards y as having higher status, conversly, a
+negative edge indicates that x regards y as having lower status. Flipping the direction of an edge, also
+flips its sign." [13] As demonstrared on figure 9, given a signed directed network and three nodes (v,u,w) ,
+if we know the signs of the links between v and w, and u and w, then we can infer the sign of the link 
+between u and v. \\
+As demonstrated by Leskovec et al., Status Theory is another approach that can be used to predict an
+unknown sign. However, Balance Theory and Status Theory do not always agree on the sign prediction.
+Status Theory assumes a directed graph, hence it may be more suitable than Balance Theory for modelling
+signed directed social networks.\\
+These findings are truly important because predicting positive edges in signed social networks is useful
+for recommending content and for making friend suggestions.\\
 
 \section{Influence}
 
