@@ -103,12 +103,6 @@ A graph of a social network. The thikness of lines represents the strength of re
 \indent
 Social networks have been studied in society long before the existance of Internet. For example, Wikipedia defines a Social Network as: "a social structure made up of a set of social actors (such as
 individuals or organizations) and a set of the dyadic ties between these actors,"[2] and this definition can also explain an online social network like Twitter or Facebook (fig. 1).\\
-Graph Theory is often applied to model social networks. In this case we define actors (vertices), see fig. 2,  as individuals or organizations that participate in relationships. Again, this definition is closely related to the one given by Wasserman et al. in 1984 with respect to social and behavioural sciences: "Actors are discrete individual, corporate, or collective social units"[4]. \\
-We can say that online social networks closely mirror the structure of the existing relationships in society. Thus, a relationship between two nodes can be modelled as a an edge in a graph. It is also known as a tie, or the link between a pair of actors [4]. Depending on the social network, the link can be directed (eg. a follower on Twitter) or undirected (eg. a friend on Facebook). It can also be signed or unsigned; mutual or not. \\
-Two nodes examined together with the relationship between them constitute a dyad (fig. 3). \\
-When we consider a third node in addition to the existing two, we get a group of three actors which is known as a "triad". The concept of triad is important because it allows us to study the balance between the links in a signed network (Balance Theory) as well as the transitivity and network closure well known in the fields of sociology and psychology (fig. 4).\\
-These theories have application to online social networks for the purpose of discovering links which are not explicit (eg. suggesting friends on Facebook or LinkedIn) and for recommending content based on the tastes of friends we "like".\\
-
 \begin{center}
 \begin{figure}[hb]
 \centering
@@ -120,7 +114,8 @@ An actor (vertice) can be an individual or organization. [3]
 \label{fig_sim}
 \end{figure}
 \end{center}
-
+Graph Theory is often applied to model social networks. In this case we define actors (vertices), see fig. 2,  as individuals or organizations that participate in relationships. Again, this definition is closely related to the one given by Wasserman et al. in 1984 with respect to social and behavioural sciences: "Actors are discrete individual, corporate, or collective social units"[4]. \\
+We can say that online social networks closely mirror the structure of the existing relationships in society. Thus, a relationship between two nodes can be modelled as a an edge in a graph. It is also known as a tie, or the link between a pair of actors [4]. Depending on the social network, the link can be directed (eg. a follower on Twitter) or undirected (eg. a friend on Facebook). It can also be signed or unsigned; mutual or not. \\
 \begin{center}
 \begin{figure}[hb]
 \centering
@@ -132,7 +127,7 @@ A dyad: two nodes and the edge between them. [5]
 \label{fig_sim}
 \end{figure}
 \end{center}
-
+Two nodes examined together with the relationship between them constitute a dyad (fig. 3). \\
 \begin{center}
 \begin{figure}[hb]
 \centering
@@ -144,12 +139,10 @@ A triad: three nodes and the edges between them. [6]
 \label{fig_sim}
 \end{figure}
 \end{center}
+When we consider a third node in addition to the existing two, we get a group of three actors which is known as a "triad". The concept of triad is important because it allows us to study the balance between the links in a signed network (Balance Theory) as well as the transitivity and network closure well known in the fields of sociology and psychology (fig. 4).\\
+These theories have application to online social networks for the purpose of discovering links which are not explicit (eg. suggesting friends on Facebook or LinkedIn) and for recommending content based on the tastes of friends we "like".\\
 
-
-The three seasons used in this dataset are as per Mu (2007): 
-November, December, January, February, March: 0 (winter); 
-June, July, August: 1 (summer); 
-April, May, September, October: 2 (shoulder) \\
+\subsection{Centrality}
 
 \begin{center}
 \begin{figure}[hb]
@@ -157,11 +150,15 @@ April, May, September, October: 2 (shoulder) \\
 %\includegraphics{imagen1.eps}
 \includegraphics[width=2.5in]{ego_network}
 \caption{
-A node with high degree centrality. [7]
+An influential node with high degree centrality. [7]
 }
 \label{fig_sim}
 \end{figure}
 \end{center}
+
+\indent
+Centrality is an important concept in graph theory as it identifies the most important (or influential) vertices in a graph (fig. 5). With respect to social networks analysis, measuring centrality allows us to study the structure of the network and measures of influence that actors have.\\
+
 
 \begin{center}
 \begin{figure}[hb]
