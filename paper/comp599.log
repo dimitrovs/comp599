@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.7.14)  30 OCT 2014 21:30
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.7.14)  30 OCT 2014 21:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -265,6 +265,9 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 LaTeX Warning: Label `fig_sim' multiply defined.
 
 
+LaTeX Warning: Label `fig_sim' multiply defined.
+
+
 LaTeX Warning: Label `Bib:Leskovec' multiply defined.
 
 )
@@ -411,75 +414,81 @@ Package pdftex.def Info: f03.jpg used on input line 138.
 
 
  <./social-network-grid.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 146--150
+<open-triad.jpg, id=57, 458.46281pt x 271.76532pt>
+File: open-triad.jpg Graphic file (type jpg)
+ <use open-triad.jpg>
+Package pdftex.def Info: open-triad.jpg used on input line 150.
+(pdftex.def)             Requested size: 231.26378pt x 137.08904pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--163
 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 154.
+(Font)              <7> on input line 167.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 154.
+(Font)              <5> on input line 167.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 154.
+(Font)              <8> on input line 167.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 154.
+(Font)              <6> on input line 167.
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--171
+Underfull \hbox (badness 10000) in paragraph at lines 166--184
 []\OT1/ptm/m/n/10 I used leave-one-out cross-validation to test the
  []
 
 
-Underfull \hbox (badness 6428) in paragraph at lines 153--171
+Underfull \hbox (badness 6428) in paragraph at lines 166--184
 \OT1/ptm/m/n/10 per-for-mance of my dataset with lo-gis-tic re-gres-sion,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--171
+Underfull \hbox (badness 10000) in paragraph at lines 166--184
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--191
+Underfull \hbox (badness 10000) in paragraph at lines 196--204
 
  []
 
 [2 <./social-network.pdf> <./f03.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 194--196
+Underfull \hbox (badness 10000) in paragraph at lines 207--209
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--209
+Underfull \hbox (badness 10000) in paragraph at lines 219--222
 
  []
 
 
-Underfull \hbox (badness 1478) in paragraph at lines 211--228
+Underfull \hbox (badness 1478) in paragraph at lines 224--241
 \OT1/ptm/m/n/10 con-sider tem-per-a-ture mea-sure-ments through-out the day,
  []
 
 
-Underfull \hbox (badness 1655) in paragraph at lines 211--228
+Underfull \hbox (badness 1655) in paragraph at lines 224--241
 \OT1/ptm/m/n/10 as Chang et al. (2008) do for the over-all mar-ket[4],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--228
+Underfull \hbox (badness 10000) in paragraph at lines 224--241
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--245
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
 []\OT1/ptm/m/n/8 How to Use Crowd-sourc-ing in the Class-room. Avail-able:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--245
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
 \OT1/ptm/m/n/8 http://www.hollyclark.org/2013/11/03/how-to-use-crowdsourcing-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--249
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
 []\OT1/ptm/m/n/8 An ex-am-ple of a so-cial net-work di-a-gram. Avail-able:
  []
 
@@ -487,75 +496,70 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
 []\OT1/ptm/m/n/8 Examples of dyads. United States Army Train-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
 \OT1/ptm/m/n/8 ing Sup-port Cen-ter. Avail-able: https://courseware.e-
  []
 
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ¢ in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--255
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
 []\OT1/ptm/m/n/8 Tufekci, Zeynep; "Is the So-cial Web Less Sur-pris-ing?
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--255
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
 \OT1/ptm/m/n/8 The In-ter-net of Peo-ple and So-cial Flneurism," Avail-able:
  []
 
 
-Underfull \hbox (badness 4621) in paragraph at lines 256--257
+Underfull \hbox (badness 4621) in paragraph at lines 269--270
 []\OT1/ptm/m/n/8 Weingart, Scott; "Net-works De-mys-ti-fied 2: De-gree," Avail-
 able:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--259
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
 []\OT1/ptm/m/n/8 Keung, Tim; "So-cial / Or-ga-ni-za-tional Net-work Anal-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--259
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
 \OT1/ptm/m/n/8 y-sis: Com-mon Ter-mi-nol-ogy (Part 3)," Avail-able:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--259
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
 \OT1/ptm/m/n/8 http://hr.toolbox.com/blogs/organizational-network-mapping/socia
 l-
  []
 
 
-Overfull \hbox (46.0817pt too wide) in paragraph at lines 260--261
+Overfull \hbox (46.0817pt too wide) in paragraph at lines 273--274
 []\OT1/ptm/m/n/8 Betweenness cen-tral-ity, Avail-able: http://en.wikipedia.org/
 wiki/Betweenness[]centrality 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 264--265
+[3 <./open-triad.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
 \OT1/ptm/m/n/8 Haystack," Avail-able: http://www.ams.org/samplings/feature-
  []
 
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
-[3]pdfTeX warning (ext4): destination with the same identifier (name{cite.Bib:L
-eskovec}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.277 \bibitem{Bib:Leskovec}
-                            
-Underfull \hbox (badness 6236) in paragraph at lines 278--279
+
+Underfull \hbox (badness 6236) in paragraph at lines 291--292
 []\OT1/ptm/m/n/8 Jure Leskovec, Lada A. Adamic, and Bernardo A. Hu-ber-
  []
 
 
-Underfull \hbox (badness 7238) in paragraph at lines 278--279
+Underfull \hbox (badness 7238) in paragraph at lines 291--292
 \OT1/ptm/m/n/8 man. 2007. The dy-nam-ics of vi-ral mar-ket-ing. ACM Trans.
  []
 
@@ -570,39 +574,45 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 283.
-[4
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 296.
+[4pdfTeX warning (ext4): destination with the same identifier (name{cite.Bib:Le
+skovec}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.296 \end{document}
+                    
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 283.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 296.
  (./comp599.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 283.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 283.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 296.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 296.
 Package rerunfilecheck Info: File `comp599.out' has not changed.
 (rerunfilecheck)             Checksum: 407CC6D1B4EE8F872E6C5C3CC256D950;505.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 283.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 296.
  ) 
 Here is how much of TeX's memory you used:
- 6190 strings out of 495059
- 95148 string characters out of 3182030
- 193746 words of memory out of 3000000
- 9299 multiletter control sequences out of 15000+200000
+ 6196 strings out of 495059
+ 95245 string characters out of 3182030
+ 190734 words of memory out of 3000000
+ 9303 multiletter control sequences out of 15000+200000
  37493 words of font info for 71 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,8n,28p,486b,434s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,8n,28p,486b,432s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.p
 fb>
-Output written on comp599.pdf (4 pages, 139434 bytes).
+Output written on comp599.pdf (4 pages, 179412 bytes).
 PDF statistics:
- 141 PDF objects out of 1000 (max. 8388607)
- 124 compressed objects within 2 object streams
- 38 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 143 PDF objects out of 1000 (max. 8388607)
+ 125 compressed objects within 2 object streams
+ 39 named destinations out of 1000 (max. 500000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 
