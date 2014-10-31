@@ -82,22 +82,9 @@ Thus, it is of great interest to study the underlying theories which explain the
 the balance of power and influence in groups and the ideas powering viral information propagation in society. This paper aims to investigate the applicability of these existing theories to the recently emerged online social network services.
 Gaining better understanding of the science behind these services will facilitate future work to solve important problems in social networks such as the identification of malicious or automated accounts publishing undesired commercial messages (SPAM) in social networks.\\
 \indent
-The following section presents an overview of existing works related to Social Network Analysis, which form the foundation for this paper. Later we define the most important concepts for the study of social networks, such as actors, relations and centrality.
+The following section defines the most important concepts for the study of social networks, such as actors, relations and centrality.
 Then we focus on influence in social networks and viral marketing. Finally, we conclude with a summary of our study.\\
 %\hfill August 13, 2002
-
-\section{Related work}
-% no \PARstart
-Weather has been linked with feature prices in the past, in particular with natural gas. The reason is because
-natural gas is used for heating in the winter and for energy generation which powers air conditioning systems in the summer. 
-Thus, short term temperature variations can cause volatility in the demand for natural gas. As Mu (2007) found, up to
-50\% of the US demand for natural gas is affected by weather. [3] \\
-\indent Furthermore, weather has been found to influence the intraday trading behaviour of traders by affecting their mood [4]. 
-Chang et al. (2008) look into the overall stock market, but not gas equities in particular. \\
-\indent I have not found any prior study attempting to predict the direction of daily returns for a gas equity based on
-weather measurements and deviations from the mean temperature for a given day. While Mu (2007) looks into the effect of
-weather shocks on gas features returns, he does not look into the psychological influence of weather variations on traders. \\
-
 
 \section{Definition}
 
@@ -267,6 +254,10 @@ The observed temperature column I populated with the average of minimum and maxi
 \includegraphics[width=2.0in]{influence_passivity}
 \end{figure}
 \end{center}
+
+\centerline{
+  \includegraphics[width=2.0in]{influence_passivity.png}
+}
 
 \indent Once I had the dataset, I attempted to implement logistic regression. Unfortunately, I was not successful. I encountered
 issues with float precision in Python and probably other implementation problems. I did implement a Naive Bayes classifier
