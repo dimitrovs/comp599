@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.7.14)  30 OCT 2014 20:33
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.7.14)  30 OCT 2014 21:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -267,9 +267,6 @@ LaTeX Warning: Label `table3' multiply defined.
 
 LaTeX Warning: Label `table3' multiply defined.
 
-
-LaTeX Warning: Label `Bib:VelocityShares' multiply defined.
-
 )
 \openout1 = `comp599.aux'.
 
@@ -475,6 +472,92 @@ Underfull \hbox (badness 10000) in paragraph at lines 295--312
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 328--329
+[]\OT1/ptm/m/n/8 How to Use Crowd-sourc-ing in the Class-room. Avail-able:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 328--329
+\OT1/ptm/m/n/8 http://www.hollyclark.org/2013/11/03/how-to-use-crowdsourcing-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 332--333
+[]\OT1/ptm/m/n/8 An ex-am-ple of a so-cial net-work di-a-gram. Avail-able:
+ []
+
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
+[]\OT1/ptm/m/n/8 Examples of dyads. United States Army Train-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
+\OT1/ptm/m/n/8 ing Sup-port Cen-ter. Avail-able: https://courseware.e-
+ []
+
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¢ in font ptmr7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--339
+[]\OT1/ptm/m/n/8 Tufekci, Zeynep; "Is the So-cial Web Less Sur-pris-ing?
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--339
+\OT1/ptm/m/n/8 The In-ter-net of Peo-ple and So-cial Flneurism," Avail-able:
+ []
+
+
+Underfull \hbox (badness 4621) in paragraph at lines 340--341
+[]\OT1/ptm/m/n/8 Weingart, Scott; "Net-works De-mys-ti-fied 2: De-gree," Avail-
+able:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--343
+[]\OT1/ptm/m/n/8 Keung, Tim; "So-cial / Or-ga-ni-za-tional Net-work Anal-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--343
+\OT1/ptm/m/n/8 y-sis: Com-mon Ter-mi-nol-ogy (Part 3)," Avail-able:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--343
+\OT1/ptm/m/n/8 http://hr.toolbox.com/blogs/organizational-network-mapping/socia
+l-
+ []
+
+
+Overfull \hbox (46.0817pt too wide) in paragraph at lines 344--345
+[]\OT1/ptm/m/n/8 Betweenness cen-tral-ity, Avail-able: http://en.wikipedia.org/
+wiki/Betweenness[]centrality 
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 348--349
+\OT1/ptm/m/n/8 Haystack," Avail-able: http://www.ams.org/samplings/feature-
+ []
+
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+
+Underfull \hbox (badness 6236) in paragraph at lines 362--363
+[]\OT1/ptm/m/n/8 Jure Leskovec, Lada A. Adamic, and Bernardo A. Hu-ber-
+ []
+
+
+Underfull \hbox (badness 7238) in paragraph at lines 362--363
+\OT1/ptm/m/n/8 man. 2007. The dy-nam-ics of vi-ral mar-ket-ing. ACM Trans.
+ []
+
+
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
 
@@ -485,55 +568,45 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 340.
-[3pdfTeX warning (ext4): destination with the same identifier (name{cite.Bib:Ve
-locityShares}) has been already used, duplicate ignored
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 367.
+[4pdfTeX warning (ext4): destination with the same identifier (name{cite.Bib:Le
+skovec}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.340 \end{document}
-                    ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 340.
+l.367 \end{document}
+                    
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 367.
  (./comp599.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 340.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 340.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 367.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 367.
+Package rerunfilecheck Info: File `comp599.out' has not changed.
+(rerunfilecheck)             Checksum: 407CC6D1B4EE8F872E6C5C3CC256D950;505.
 
-
-Package rerunfilecheck Warning: File `comp599.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `comp599.out':
-(rerunfilecheck)             Before: 0914A8714C25D8415A16351BC9E5B46F;555
-(rerunfilecheck)             After:  407CC6D1B4EE8F872E6C5C3CC256D950;505.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 340.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 367.
  ) 
 Here is how much of TeX's memory you used:
- 6153 strings out of 495059
- 94371 string characters out of 3182030
- 206283 words of memory out of 3000000
- 9277 multiletter control sequences out of 15000+200000
+ 6179 strings out of 495059
+ 94889 string characters out of 3182030
+ 206620 words of memory out of 3000000
+ 9290 multiletter control sequences out of 15000+200000
  39217 words of font info for 73 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,14n,28p,486b,326s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{section*.2} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.7} has been referenced but does not exist, 
-replaced by a fixed one
-
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
-texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/font
-s/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
-mes/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
->
-Output written on comp599.pdf (3 pages, 69527 bytes).
+ 29i,14n,28p,486b,432s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
+times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.p
+fb>
+Output written on comp599.pdf (4 pages, 72285 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
- 92 compressed objects within 1 object stream
- 27 named destinations out of 1000 (max. 500000)
- 89 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 120 PDF objects out of 1000 (max. 8388607)
+ 108 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 500000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
