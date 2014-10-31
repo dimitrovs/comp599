@@ -113,9 +113,9 @@ An actor (vertice) can be an individual or organization. [3]
 \label{fig_sim}
 \end{figure}
 \end{center}
-
 Graph Theory is often applied to model social networks. In this case we define actors (vertices), see fig. 2,  as individuals or organizations that participate in relationships. Again, this definition is closely related to the one given by Wasserman et al. in 1984 with respect to social and behavioural sciences: "Actors are discrete individual, corporate, or collective social units"[4]. \\
 We can say that online social networks closely mirror the structure of the existing relationships in society. Thus, a relationship between two nodes can be modelled as a an edge in a graph. It is also known as a tie, or the link between a pair of actors [4]. Depending on the social network, the link can be directed (eg. a follower on Twitter) or undirected (eg. a friend on Facebook). It can also be signed or unsigned; mutual or not. \\
+
 \begin{center}
 \begin{figure}[hb]
 \centering
@@ -129,7 +129,7 @@ A dyad: two nodes and the edge between them. [5]
 \end{center}
 
 Two nodes examined together with the relationship between them constitute a dyad (fig. 3). \\
-
+When we consider a third node in addition to the existing two, we get a group of three actors which is known as a "triad". The concept of triad is important because it allows us to study the balance between the links in a signed network (Balance Theory) as well as the transitivity and network closure well known in the fields of sociology and psychology (fig. 4).\\
 \begin{center}
 \begin{figure}[hb]
 \centering
@@ -141,8 +141,6 @@ A triad: three nodes and the edges between them. [6]
 \label{fig_sim}
 \end{figure}
 \end{center}
-
-When we consider a third node in addition to the existing two, we get a group of three actors which is known as a "triad". The concept of triad is important because it allows us to study the balance between the links in a signed network (Balance Theory) as well as the transitivity and network closure well known in the fields of sociology and psychology (fig. 4).\\
 These theories have application to online social networks for the purpose of discovering links which are not explicit (eg. suggesting friends on Facebook or LinkedIn) and for recommending content based on the tastes of friends we "like".\\
 
 \subsection{Centrality}
@@ -174,7 +172,8 @@ In degree and out degree in a directional social network. [8]
 \end{figure}
 \end{center}
 
-One type of centrality is degree centrality. It is defined as the number of ties a node has; the simples way to measure centrality. In directed networks such as Twitter there are two types (fig. 6): indegree, measuring the number of ties to the node (followers), and outdegree - the number of ties from the node (following). Indegree in particular is an important concept for social networks because it expresses the popularity of a given node. \\
+One type of centrality is degree centrality. It is defined as the number of ties a node has; the simplest way to measure centrality. In directed networks such as Twitter there are two types (fig. 6): indegree, measuring the number of ties to the node (followers), and outdegree - the number of ties from the node (following). Indegree in particular is an important concept for social networks because it expresses the popularity of a given node. \\
+\indent
 A second type of centrality measure is betweenness centrality. It can be expressed as g(v):
 
 \centerline{
@@ -182,8 +181,11 @@ A second type of centrality measure is betweenness centrality. It can be express
 }
 
 where the numerator represents the total number of shortest paths through a vertice v, while the denominator is the total number of shortest paths. This measure is particularly useful for networks where information is known to always take the shortest path. In such networks high betweenness centrality indicates high influence on the transfer of information through the network. It allows us to indetify the number of times a node acts as a bridge between two nodes.\\
+\indent
 Another type of centrality is closeness centrality, defined as the inverse of the sum of the distances from a node to all other nodes [10]. It can be useful for studies of information propagation within social networks.\\
-A very important measure is eigenvector centrality. We can look at eigenvector centrality as a generalization of PageRank [11]. Just like PageRank measures the importance of a webpage on the Internet relative to other webpages, eigenvector centrality measures the influence of a node in a social network. It assigns assigns relative scores to nodes, with nodes of higher scores contributing more than a large number of nodes of lower scores. \\
+\indent
+A very important measure is eigenvector centrality. We can look at eigenvector centrality as a generalization of PageRank [11]. Just like PageRank measures the importance of a webpage on the Internet relative to other webpages, eigenvector centrality measures the influence of a node in a social network. It assigns relative scores to nodes, with nodes of higher scores contributing more than a large number of nodes of lower scores. \\
+\indent
 Eigenvector centrality can be augmented to account for "external influence" which is often present on social networks. For instance, a famous person on Twitter may be followed by other famous people which makes her influential as measured by eigenvector centrality, but she may also be influential because of her real life popularity. The alpha centrality of a node x can be expressed as:\\
 
 \centerline{
@@ -194,6 +196,7 @@ Where alpha is a tradeoff constant between links and external influence. When al
 
 \subsection{Structural holes}
 
+In networks with homogeneous vertices (e.g. students who finished the same university) we observe the formation of clusters. Clusters are characterized by strong ties between the vertices within them and fewer (or weaker) ties to vertices outside of the cluster. When two clusters contain non-overlapping information, there is a structural hole between them. Nodes "bridging" the structural holes are called "borkers" and can leverage social capital (fig. 7).
 \begin{center}
 \begin{figure}[hb]
 \centering
@@ -206,7 +209,7 @@ A structural hole in a triad. [12]
 \end{figure}
 \end{center}
 
-In networks with homogeneous vertices (e.g. students who finished the same university) we observe the formation of clusters. Clusters are characterized by strong ties between the vertices within them and fewer (or weaker) ties to vertices outside of the cluster. When two clusters contain non-overlapping information, there is a structural hole between them. Nodes "bridging" the structural holes are called "borkers" and can leverage social capital (fig. 7). For example, a structural hole can exist between the amlumni of an academia and the employees of a company on LinkedIn. An alumna who graduated from the academia and is currently employed by the company can act as a broker in recruiting talent for her employer and in helping her fellow alumni secure employment.\\
+For example, a structural hole can exist between the amlumni of an academia and the employees of a company on LinkedIn. An alumna who graduated from the academia and is currently employed by the company can act as a broker in recruiting talent for her employer and in helping her fellow alumni secure employment.\\
 
 \subsection{Signed social networks}
 
