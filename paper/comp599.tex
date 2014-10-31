@@ -225,22 +225,6 @@ Fritz Heider's P-O-X model. [14]
 In some social networks the links between vertices can be signed: positive or negative. These social networks (eg. Epinions, Slashdot) allow their users to explicitly express their sentiment with respect to the relation they have with other users.\\
 In other cases, up-voting ("liking") or down-voting content can also indicate sentiment towards users. A relation in a social network is positive or negative depending on the attitude of the originator towards the target of the relation [13]. Leskovec et al., demonstrate that an unknown sentiment can be inferred from the signs of surrounding nodes, and this problem is similar to link prediction.
 Furthermore, identifying the negative edges in a social network can help predict positive edges, which were not previously known (fig. 10) [13]. \\
-One of the approaches Leskovec et al. apply to the problem of predicting unknown signs in social networks is Fritz Heider's Balance Theory (1958). This theory can be expressed as a P-O-X model (fig. 8) where p, o and x are nodes in a signed network. Khanafiah et al. explain the P-O-X model as: "Sentiment relation p and x is determined by an attitude of p and x toward o. If the multiplication of signs of these relations is positive, then the balance state is achieved." [14] \\
-Thus, for a triad to be in a balanced state it should have either three positive links or two negative links and one positive link. By applying this theory to a triad in a social network for which we know the signs of two of the links, we can predict the sign of the third, assuming the triad is biased.\\
-These findings are truly important because predicting positive edges in signed social networks is useful for recommending content and for making friend suggestions.\\
-
-
-\begin{center}
-\begin{figure}[hb]
-\centering
-%\includegraphics{imagen1.eps}
-\includegraphics[width=3.2in]{status_theory}
-\caption{
-Flipping the direction of an edge according to Status Theory.
-}
-\label{fig_sim}
-\end{figure}
-\end{center}
 
 \begin{center}
 \begin{figure}[hb]
@@ -254,31 +238,42 @@ Accuracy of predicting positive and negative edges for three social networks. [1
 \end{figure}
 \end{center}
 
+One of the approaches Leskovec et al. apply to the problem of predicting unknown signs in social networks is Fritz Heider's Balance Theory (1958). This theory can be expressed as a P-O-X model (fig. 8) where p, o and x are nodes in a signed network. Khanafiah et al. explain the P-O-X model as: "Sentiment relation p and x is determined by an attitude of p and x toward o. If the multiplication of signs of these relations is positive, then the balance state is achieved." [14] \\
+Thus, for a triad to be in a balanced state it should have either three positive links or two negative links and one positive link. By applying this theory to a triad in a social network for which we know the signs of two of the links, we can predict the sign of the third, assuming the triad is balanced.\\
+
+\begin{center}
+\begin{figure}[hb]
+\centering
+%\includegraphics{imagen1.eps}
+\includegraphics[width=3.2in]{status_theory}
+\caption{
+Flipping the direction of an edge according to Status Theory.
+}
+\label{fig_sim}
+\end{figure}
+\end{center}
+
+Another theory Leskovec et al. apply to signed social networks is the Status Theory, which they define as: "Given a positive, directed, edge (x,y) from x to y, x regards y as having higher status, conversly, a negative edge indicates that x regards y as having lower status. Flipping the direction of an edge, also flips its sign." [13] As demonstrared on figure 9, given a signed directed network and three nodes (v,u,w) , if we know the signs of the links between v and w, and u and w, then we can infer the sign of the link between u and v. \\
+As demonstrated by Leskovec et al., Status Theory is another approach that can be used to predict an unknown sign. However, Balance Theory and Status Theory do not always agree on the sign prediction. Status Theory assumes a directed graph, hence it may be more suitable than Balance Theory for modelling signed directed social networks.\\
+These findings are truly important because predicting positive edges in signed social networks is useful for recommending content and for making friend suggestions.\\
 
 \section{Influence}
-In preparing the dataset I first used the Google Finance feature of Google Spreadsheets to obtain end of day data for UNG
-since inception (2007-04-18) until 2014-09-17\footnote{https://support.google.com/docs/answer/3093281?hl=en}. Then I processed 
-the data to generate the Return, Day of Year, Season, Day of Week, Open, Overnight Change and Previous Return columns.
-To calculate mean temperature I downloaded all daily weather data for the New York Central Park weather station from 1763 until 2014.
-\footnote{http://www1.ncdc.noaa.gov/pub/data/ghcn/daily/by\_year/}
-Originally I intended to use the observed temperature at 12:00 AM, however this data was not available for recent years.
-Thus, to calculate the mean I averaged all minimum and maximum temperature measurements for a given day of the year. 
-The observed temperature column I populated with the average of minimum and maximum temperature on the specific date. \\
+
+Information propagation in social networks indicates influence. Understanding influence is important for viral marketing, which leverages social networks for the purpose of promoting niche products.\\
+As Galuba et al. discover, popularity (the degree of a node) and influence are not strongly correlated [15]. For example on Twitter, having many followers does not mean that a user can influence them. \\
+To better measure unfluence, Galuba et al. look into passivity (receiving content without propagating it further) and find that the majority of users are consumers (passive nodes). For their Twitter sample, they find that the average Twitter user retweets only one in 318 URLs [15]. \\
+Galuba et al. show that passivity in social networks is a barrier to information propagation, and that highly passive users may be spam accounts. [15]
+Given a directed graph G = (N,E,W); nodes N, arcs E and weights W, they propose the Influence-Passivity algorithm for expressing the influence of node i I(i) and passivity P(i) as:\\
 
 \centerline{
   \includegraphics[width=2.0in]{influence_passivity.png}
 }
 
-\indent Once I had the dataset, I attempted to implement logistic regression. Unfortunately, I was not successful. I encountered
-issues with float precision in Python and probably other implementation problems. I did implement a Naive Bayes classifier
-successfully, however it is very slow.  In order to be able to present this report on time I resorted to developing 
-a Scikit-learn based solution.[5] Thus, the rest of this section and the results discuss my findings with the aforementioned solution. \\
-\indent I used leave-one-out cross-validation to test the performance of my dataset with logistic regression, LDA and Naive Bayes
-classifiers, as well as to identify the best model dimension. I repeated the cross-validation experiment starting with only two
-dimensions (Day of Year and Season) and adding one dimension on every run until all 8 dimensions were included in the model, for
-every classifier. I also implemented a "baseline" classifier which always chooses the predominant result from the test set. \\
-\indent I repeated all tests with half of the training data in order to evaluate how changing the data size affects the
-performance of the classifiers. \\
+where u ij is the acceptance rate, defined as the influence j accepted from i over the total influence accepted by j; and v ji is the rejection rate: influence user i rejected from j / total influence rejected from j [15].\\
+By comparing various measures of influence on Twitter, Galuba et al. show that popularity (number of followers) is a weak predictor of influence; the number of historic retweets is a poor prediction of actioning on a URL in a tweet;
+the Hirsch index used to model citations in science communities is also a poor predictor of influence on Twitter (they consider the assymetry of Twitter as a potential explanation for this observation, i.e. following a user does not imply the reciprocal action of following back);
+the PageRank algorithm is a good predictor of influence on social networks; and finally, the proposed Influence-Passivity algorithm is the best predictor of influence. Thus, influencing users who are dif icult to influence, not just many users, has a major effect in social
+networks [15].\\
 
 \section{Viral Marketing}
 
@@ -286,56 +281,8 @@ performance of the classifiers. \\
 % Note that \label must occur AFTER (or within) \caption.
 % For figures, \caption should occur after the \includegraphics.
 
-\subsection{Logistic Regression}
-I first performed logistic regression with half of the dataset (923 samples):
-
-
-
-As demonstrated in table 1, the model performs slightly better than the baseline (always choosing the most popular result). It appears that adding weather measurements (mean and
-observed temperature) helps reduce both the training error rate and the estimated true prediction error.\\
-\indent Next, I repeated the test with the full dataset (1847 samples), as can be seen on table 2. The results are very much consistent and show that the model of all 8
-dimensions performs better than average and better than models of lower dimensions. However, my results reveal that increasing the amount of training data decreases the
-performance of the model, which is unexpected. It could be explained by the fact that the dataset was not randomized. Thus, there appear to be other factors which may
-help in predicting the direction of gas equities, and they could be an interesting topic for further research. \\
-\indent A slight overfitting can be observed when adding the overnight return variable to the larger dataset. What is interesting
-is that adding mean temperature alone does not improve performance, but adding the observed temperature does. \\
-
-\subsection{LDA}
-
-Table 3 summarizes the results of the LDA classifier. Similar results were obtained as with Logistic Regression. LDA performs even better on the smaller dataset,
-but performs worse than Logistic Regression on the full dataset. \\
-
-
-\subsection{Naive Bayes}
-Table 4 shows the results of running the scikit-learn Naive Bayes classifier. The Naive Bayes classifier performs the worst of all three evaluated in this paper. A possible reason
-would be that the dataset dimensions are not truly independent: season for example can be inferred from day of year. \\
-I also implemented a Naive Bayes classifier, but it is much slower than the Scikit-learn version. Yet, the results are the same
-(apart for some very slight differences on the smaller dataset which I attribute to including the header line in the row count and rounding). The results of my classifier
-can be seen on Table 5.
-
-
-While not shown, I did try various combinations of dimensions with all three classifiers and experienced similar or worse results. Therefore,
-based on the results above, the model with all 8 dimensions is able to predict the direction of daily returns for natural gas securities slightly
-better than the baseline, when used with Logistic Regression classifier (see fig.1) . \\
 
 \section{Conclusion}
-This is a first attempt at creating a dataset linking weather variations to intraday trading returns for a gas security. I chose the dimensions for this
-dataset based primarily on empirical observations, but also validated their relevance using the leave-one-out cross-validation method. Predicting intraday
-returns for any security, especially one as volatile as UNG, is a very challenging task. While the proposed dataset performs less than perfectly, it can be
-used as a good starting point for further research. \\
-\indent Gas supply is relatively fixed in the short term, because building wells and pipes takes time. On the other hand,
-temperature fluctuations affect gas demand as consumers and industries buy more gas for heating/cooling. Thus, the changes in demand with fixed
-supply lead to volatility in the equilibrium price. Traders of gas equities analyse supply and demand data to gain insight into the market direction. However,
-supply, storage and demand numbers are available only on the day when a report is released. Yet, traders need to make buy/sell decisions every day the market
-is open. Hence, weather appears to be the one input factor which is continuously available and affects prices. \\
-Normally gas features are very volatile, still there are 36 days in the dataset
-for which the intraday return is 0.00\% (open price is equal to close price). For these
-days I assign the intraday return to 0 (negative).\\
-\indent A possible future direction for research would be to consider temperature measurements throughout the day, as Chang et al. (2008) do for the overall market[4], but
-particularly with respect to gas equities. If enough DGAZ/UGAZ data is available, it may provide better insight into the psychology of intraday traders, due to the triple
-returns offered by these instruments. Other variables, such as the market demand/supply numbers, can help predict the trend for gas prices. At the same time, the
-day when these numbers are reported experiences unusual returns and volatility [3]. Augmenting the daily returns prediction model with the aforementioned extra
-dimensions could improve its performance, hence it would be a worthwhile direction of further research. \\
 
 % trigger a \newpage just before the given reference
 % number - used to balance the columns on the last page
