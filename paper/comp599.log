@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.7.14)  31 OCT 2014 01:31
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.7.14)  31 OCT 2014 01:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -385,23 +385,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--97
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--102
+
+ []
+
 <social-network-grid.jpg, id=40, 588.1975pt x 286.06876pt>
 File: social-network-grid.jpg Graphic file (type jpg)
 
 <use social-network-grid.jpg>
-Package pdftex.def Info: social-network-grid.jpg used on input line 101.
+Package pdftex.def Info: social-network-grid.jpg used on input line 106.
 (pdftex.def)             Requested size: 231.26378pt x 112.47429pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 109--113
-
- []
-
-<social-network.pdf, id=41, 345.29pt x 208.78pt>
+ <social-network.pdf, id=41, 345.29pt x 208.78pt>
 File: social-network.pdf Graphic file (type pdf)
- <use social-network.pdf>
+
+<use social-network.pdf>
 Package pdftex.def Info: social-network.pdf used on input line 117.
 (pdftex.def)             Requested size: 231.26378pt x 139.83406pt.
 
@@ -477,8 +475,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 201--219
 
  []
 
-[2 <./f03.jpg> <./betweenness_centrality.png> <./open-triad.jpg>]
-<alpha_centrality.png, id=85, 423.5825pt x 94.3525pt>
+[2 <./f03.jpg> <./open-triad.jpg> <./ego_network.png> <./degree_centrality.jpg>
+ <./betweenness_centrality.png>]
+<alpha_centrality.png, id=87, 423.5825pt x 94.3525pt>
 File: alpha_centrality.png Graphic file (type png)
 
 <use alpha_centrality.png>
@@ -489,7 +488,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 223--226
 
  []
 
-<structural_hole.jpg, id=87, 240.9pt x 190.46156pt>
+<structural_hole.jpg, id=89, 240.9pt x 190.46156pt>
 File: structural_hole.jpg Graphic file (type jpg)
  <use structural_hole.jpg>
 Package pdftex.def Info: structural_hole.jpg used on input line 232.
@@ -509,7 +508,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 239--247
 
  []
 
-<pox.jpg, id=88, 223.58531pt x 197.23688pt>
+<pox.jpg, id=90, 223.58531pt x 197.23688pt>
 File: pox.jpg Graphic file (type jpg)
  <use pox.jpg>
 Package pdftex.def Info: pox.jpg used on input line 254.
@@ -519,7 +518,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 261--269
 
  []
 
-<predicting_positive.png, id=89, 915.42pt x 139.52126pt>
+<predicting_positive.png, id=91, 915.42pt x 139.52126pt>
 File: predicting_positive.png Graphic file (type png)
 
 <use predicting_positive.png>
@@ -535,11 +534,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 280--288
 
  []
 
-[3 <./alpha_centrality.png> <./ego_network.png> <./degree_centrality.jpg> <./st
-ructural_hole.jpg>] <status_theory.png, id=98, 588.1975pt x 373.395pt>
+[3 <./alpha_centrality.png> <./structural_hole.jpg>]
+<status_theory.png, id=98, 588.1975pt x 373.395pt>
 File: status_theory.png Graphic file (type png)
-
-<use status_theory.png>
+ <use status_theory.png>
 Package pdftex.def Info: status_theory.png used on input line 292.
 (pdftex.def)             Requested size: 231.26378pt x 146.80855pt.
 
@@ -657,7 +655,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 413--414
 \OT1/ptm/m/n/8 http://www.hollyclark.org/2013/11/03/how-to-use-crowdsourcing-
  []
 
-[5]
+
 Underfull \hbox (badness 10000) in paragraph at lines 417--418
 []\OT1/ptm/m/n/8 An ex-am-ple of a so-cial net-work di-a-gram. Avail-able:
  []
@@ -665,7 +663,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 417--418
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
-
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 421--422
 []\OT1/ptm/m/n/8 Examples of dyads. United States Army Train-
  []
@@ -773,13 +771,13 @@ Here is how much of TeX's memory you used:
  9388 multiletter control sequences out of 15000+200000
  33007 words of font info for 62 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,8n,28p,325b,436s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,8n,28p,325b,433s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.p
 fb>
-Output written on comp599.pdf (6 pages, 326592 bytes).
+Output written on comp599.pdf (6 pages, 326693 bytes).
 PDF statistics:
  165 PDF objects out of 1000 (max. 8388607)
  131 compressed objects within 2 object streams
