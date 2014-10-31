@@ -311,48 +311,72 @@ for recommending content and for making friend suggestions.\\
 
 \section{Influence}
 
-Information propagation in social networks indicates influence. Understanding influence is important for viral marketing, which leverages social networks for the purpose of promoting niche products.\\
-As Galuba et al. discover, popularity (the degree of a node) and influence are not strongly correlated [15]. For example on Twitter, having many followers does not mean that a user can influence them. \\
-To better measure unfluence, Galuba et al. look into passivity (receiving content without propagating it further) and find that the majority of users are consumers (passive nodes). For their Twitter sample, they find that the average Twitter user retweets only one in 318 URLs [15]. \\
-Galuba et al. show that passivity in social networks is a barrier to information propagation, and that highly passive users may be spam accounts. [15]
-Given a directed graph G = (N,E,W); nodes N, arcs E and weights W, they propose the Influence-Passivity algorithm for expressing the influence of node i I(i) and passivity P(i) as:\\
+Information propagation in social networks indicates influence. Understanding influence is important for
+viral marketing, which leverages social networks for the purpose of promoting niche products.\\
+As Galuba et al. discover, popularity (the degree of a node) and influence are not strongly correlated [15].
+For example on Twitter, having many followers does not mean that a user can influence them. \\
+To better measure unfluence, Galuba et al. look into passivity (receiving content without propagating it further)
+and find that the majority of users are consumers (passive nodes). For their Twitter sample, they find that the
+average Twitter user retweets only one in 318 URLs [15]. \\
+Galuba et al. show that passivity in social networks is a barrier to information propagation, and that highly
+passive users may be spam accounts. [15] Given a directed graph G = (N,E,W); nodes N, arcs E and weights W,
+they propose the Influence-Passivity algorithm for expressing the influence of node i I(i) and passivity P(i) as:\\
 
 \centerline{
   \includegraphics[width=2.0in]{influence_passivity.png}
 }
 
-where u ij is the acceptance rate, defined as the influence j accepted from i over the total influence accepted by j; and v ji is the rejection rate: influence user i rejected from j / total influence rejected from j [15].\\
-By comparing various measures of influence on Twitter, Galuba et al. show that popularity (number of followers) is a weak predictor of influence; the number of historic retweets is a poor prediction of actioning on a URL in a tweet;
-the Hirsch index used to model citations in science communities is also a poor predictor of influence on Twitter (they consider the assymetry of Twitter as a potential explanation for this observation, i.e. following a user does not imply the reciprocal action of following back);
-the PageRank algorithm is a good predictor of influence on social networks; and finally, the proposed Influence-Passivity algorithm is the best predictor of influence. Thus, influencing users who are dif icult to influence, not just many users, has a major effect in social
-networks [15].\\
-
+where u ij is the acceptance rate, defined as the influence j accepted from i over the total influence accepted
+by j; and v ji is the rejection rate: influence user i rejected from j / total influence rejected from j [15].\\
+By comparing various measures of influence on Twitter, Galuba et al. show that popularity (number of followers)
+is a weak predictor of influence; the number of historic retweets is a poor prediction of actioning on a URL in a tweet;
+the Hirsch index used to model citations in science communities is also a poor predictor of influence on Twitter
+(they consider the assymetry of Twitter as a potential explanation for this observation, i.e. following a user
+does not imply the reciprocal action of following back); the PageRank algorithm is a good predictor of influence
+on social networks; and finally, the proposed Influence-Passivity algorithm is the best predictor of influence.
+Thus, influencing users who are dif icult to influence, not just many users, has a major effect in social networks [15].\\
 \indent
-Huberman et al., study the strength of relationships between nodes. They find that nodes interact with few of their linked nodes, i.e. a dense network does not imply large number of interactions. On the contrary, the network of nodes which actively interact with each other is sparse. It is this sparse network of true friends whihc indicates influence [16].\\
-Understanding and measuring influence is important not only for viral marketing, but also for identifying and countering malicious or automated accounts on social networks. As Yu et al. show in their study of Weibo, fake users are created to increase the popularity of a user. Furthermore, fake users who are active nodes can inflate influence. In particular,
-the Weibo sample they considered demonstrated that fake users (1.08\%) are responsible for 49\% of total retweets [17]. 
+Huberman et al., study the strength of relationships between nodes. They find that nodes interact with few of
+their linked nodes, i.e. a dense network does not imply large number of interactions. On the contrary, the network
+of nodes which actively interact with each other is sparse. It is this sparse network of true friends which
+indicates influence [16].\\
+Understanding and measuring influence is important not only for viral marketing, but also for identifying
+and countering malicious or automated accounts on social networks. As Yu et al. show in their study of Weibo,
+fake users are created to increase the popularity of a user. Furthermore, fake users who are active nodes can
+inflate influence. In particular, the Weibo sample they considered demonstrated that fake users (1.08\%)
+are responsible for 49\% of total retweets [17]. \\
 
 \section{Viral Marketing}
 
-Leskovec et al. define Viral Marketing of products in social networks as "a diffusion of information about the product and its adoption over the network" [18].
-They consider the habits of shoppers on online stores, which offer a wide variety of products, and find that significant share of purchases is for rarely sold items.
-In the case of Amazon, 20\%-40\% of all unit sales are for products outside of the top 100K most popular. Thus, there is a "long tail" of sales for niche products which
-are hard to advertise by traditional methods. Social networks are effective for advertising such niche products [18].\\
-In particular, person-to-person recommendations on a social network can be modelled as a directed multi graph where the nodes represent customers and the edges - recommendations (including direction, product and time).
-Forward recommendations are defined as the case when customers purchase as a result of a recommendation, and also decide to recommend to others [18]. These forward
-recommendations can lead to information cascades. Each cascade is a network of individuals (nodes) and recommendations (edges), where individuals make decisions based on the decisions of others [19].
-Luskovec et al. find that the probability of making a recommendation declines after an initial increase, going deeper into the cascade.\\
-Furthermore, the increasing number of incoming recommendations for the same product, increases probability of purchase, up to a point. For books after 2 recommendations probability saturates (perceived as SPAM) while for DVDs probability staturates at 10 incoming recommendations [18]. \\
-Receiving too many recommendations (>3) from the same node can also be perceived as SPAM. The level of saturation also depends on the product, eg. for books decrease in influence is more gradual than for DVDs. Thus, incentivising too much recommendation as part of a viral marketing
-campaign, weakens the links in a social network [18].\\
-In the case of outgoing recommendations, the receiver of a recommendation does not know how many other recommendations were sent. Leskovec et al. find that probability of influence as a function of the number of outgoing recommendations depends on the product.
-For example for books, probability increases with up to 10 outoging recommendations, then stabalizes or decreases; while for DVDs, probability increases with the increase of recommendations, i.e. it does not plateau. Hence, widely recommended products may not be suitable for Viral Marketing, as multiple individuals
-will recommend to the same person [18].\\
+Leskovec et al. define Viral Marketing of products in social networks as "a diffusion of information about
+the product and its adoption over the network" [18]. They consider the habits of shoppers on online
+stores, which offer a wide variety of products, and find that significant share of purchases is for rarely sold items.
+In the case of Amazon, 20\%-40\% of all unit sales are for products outside of the top 100K most popular.
+Thus, there is a "long tail" of sales for niche products which are hard to advertise by traditional methods.
+Social networks are effective for advertising such niche products [18].\\
+In particular, person-to-person recommendations on a social network can be modelled as a directed multi
+graph where the nodes represent customers and the edges - recommendations (including direction, product and time).
+Forward recommendations are defined as the case when customers purchase as a result of a recommendation,
+and also decide to recommend to others [18]. These forward recommendations can lead to information cascades.
+Each cascade is a network of individuals (nodes) and recommendations (edges), where individuals make
+decisions based on the decisions of others [19]. Luskovec et al. find that the probability of making a
+recommendation declines after an initial increase, going deeper into the cascade.\\
+Furthermore, the increasing number of incoming recommendations for the same product, increases probability
+of purchase, up to a point. For books after 2 recommendations probability saturates (perceived as SPAM)
+while for DVDs probability staturates at 10 incoming recommendations [18]. \\
+Receiving too many recommendations (>3) from the same node can also be perceived as SPAM. The level of
+saturation also depends on the product, eg. for books decrease in influence is more gradual than for DVDs.
+Thus, incentivising too much recommendation as part of a viral marketing campaign, weakens the links in a social network [18].\\
+In the case of outgoing recommendations, the receiver of a recommendation does not know how many other
+recommendations were sent. Leskovec et al. find that probability of influence as a function of the number
+of outgoing recommendations depends on the product. For example for books, probability increases with up to 
+10 outoging recommendations, then stabalizes or decreases; while for DVDs, probability increases with the increase
+of recommendations, i.e. it does not plateau. Hence, widely recommended products may not be suitable for Viral
+Marketing, as multiple individuals will recommend to the same person [18].\\
 
 % An example of a floating figure using the graphicx package.
 % Note that \label must occur AFTER (or within) \caption.
 % For figures, \caption should occur after the \includegraphics.
-
 
 \section{Conclusion}
 
