@@ -176,16 +176,20 @@ In degree and out degree in a directional social network. [8]
 
 One type of centrality is degree centrality. It is defined as the number of ties a node has; the simples way to measure centrality. In directed networks such as Twitter there are two types (fig. 6): indegree, measuring the number of ties to the node (followers), and outdegree - the number of ties from the node (following). Indegree in particular is an important concept for social networks because it expresses the popularity of a given node. \\
 A second type of centrality measure is betweenness centrality. It can be expressed as g(v):
+
 \centerline{
   \includegraphics[width=1.5in]{betweenness_centrality.png}
 }
+
 where the numerator represents the total number of shortest paths through a vertice v, while the denominator is the total number of shortest paths. This measure is particularly useful for networks where information is known to always take the shortest path. In such networks high betweenness centrality indicates high influence on the transfer of information through the network. It allows us to indetify the number of times a node acts as a bridge between two nodes.\\
 Another type of centrality is closeness centrality, defined as the inverse of the sum of the distances from a node to all other nodes [10]. It can be useful for studies of information propagation within social networks.\\
 A very important measure is eigenvector centrality. We can look at eigenvector centrality as a generalization of PageRank [11]. Just like PageRank measures the importance of a webpage on the Internet relative to other webpages, eigenvector centrality measures the influence of a node in a social network. It assigns assigns relative scores to nodes, with nodes of higher scores contributing more than a large number of nodes of lower scores. \\
 Eigenvector centrality can be augmented to account for "external influence" which is often present on social networks. For instance, a famous person on Twitter may be followed by other famous people which makes her influential as measured by eigenvector centrality, but she may also be influential because of her real life popularity. The alpha centrality of a node x can be expressed as:\\
+
 \centerline{
   \includegraphics[width=1.5in]{alpha_centrality.png}
 }
+
 Where alpha is a tradeoff constant between links and external influence. When alpha is equal to 0 only external influence determines alpha centrality. On the other hand, as alpha approaches infinity alpha centrality becomes equal to eigenvector centrality.\\
 
 \subsection{Structural holes}
@@ -204,6 +208,8 @@ A structural hole in a triad. [12]
 
 In networks with homogeneous vertices (e.g. students who finished the same university) we observe the formation of clusters. Clusters are characterized by strong ties between the vertices within them and fewer (or weaker) ties to vertices outside of the cluster. When two clusters contain non-overlapping information, there is a structural hole between them. Nodes "bridging" the structural holes are called "borkers" and can leverage social capital (fig. 7). For example, a structural hole can exist between the amlumni of an academia and the employees of a company on LinkedIn. An alumna who graduated from the academia and is currently employed by the company can act as a broker in recruiting talent for her employer and in helping her fellow alumni secure employment.\\
 
+\subsection{Signed social networks}
+
 \begin{center}
 \begin{figure}[hb]
 \centering
@@ -215,6 +221,14 @@ Fritz Heider's P-O-X model. [14]
 \label{fig_sim}
 \end{figure}
 \end{center}
+
+In some social networks the links between vertices can be signed: positive or negative. These social networks (eg. Epinions, Slashdot) allow their users to explicitly express their sentiment with respect to the relation they have with other users.\\
+In other cases, up-voting ("liking") or down-voting content can also indicate sentiment towards users. A relation in a social network is positive or negative depending on the attitude of the originator towards the target of the relation [13]. Leskovec et al., demonstrate that an unknown sentiment can be inferred from the signs of surrounding nodes, and this problem is similar to link prediction.
+Furthermore, identifying the negative edges in a social network can help predict positive edges, which were not previously known (fig. 10) [13]. \\
+One of the approaches Leskovec et al. apply to the problem of predicting unknown signs in social networks is Fritz Heider's Balance Theory (1958). This theory can be expressed as a P-O-X model (fig. 8) where p, o and x are nodes in a signed network. Khanafiah et al. explain the P-O-X model as: "Sentiment relation p and x is determined by an attitude of p and x toward o. If the multiplication of signs of these relations is positive, then the balance state is achieved." [14] \\
+Thus, for a triad to be in a balanced state it should have either three positive links or two negative links and one positive link. By applying this theory to a triad in a social network for which we know the signs of two of the links, we can predict the sign of the third, assuming the triad is biased.\\
+These findings are truly important because predicting positive edges in signed social networks is useful for recommending content and for making friend suggestions.\\
+
 
 \begin{center}
 \begin{figure}[hb]
